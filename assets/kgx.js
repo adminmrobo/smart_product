@@ -254,7 +254,7 @@ function mountIndex(root){
     '<div class="grid2"><div class="list" role="listbox" aria-label="검색 결과"></div>'+
     '<div><div class="gbox"><canvas aria-label="선택한 항목과 이웃 관계 그래프"></canvas></div><div class="legend"></div>'+
     '<p class="note gnote">항목을 고르면 그 항목과 바로 이어진 이웃만 보여 준다. 그래프의 점을 눌러도 된다.</p></div></div>'+
-    '<h3>사다리 경로 — 먼저 알아야 할 것과 한계의 사슬</h3><div class="path ladder"></div>'+
+    '<h3>학습 순서 — 먼저 알아야 할 것과 한계의 연결</h3><div class="path ladder"></div>'+
     '<h3>열린 질문 · 확인 필요</h3><ul class="todo qs"></ul>';
   // 칸 수 계산 오류 방지: 개념+방법 합
   root.querySelector('.stats div:nth-child(3) b').textContent=(count.Concept||0)+(count.Method||0);

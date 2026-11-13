@@ -1,4 +1,4 @@
-# 7주차 · 불량 분석 ① 어디서 터지는가 — 세기 · 파레토 · 층별 · 자리 지도
+# 7주차 · 불량 분석 ① 어디서 터지는가 — 세기 · 파레토 · 층별 · 불량 분포도
 import os
 _H = os.path.dirname(__file__)
 _DATA = open(os.path.join(_H, '..', 'data_w07.js'), encoding='utf-8').read()
