@@ -176,6 +176,54 @@
    "status": "ok"
   },
   {
+   "id": "sc_w07",
+   "role": "scene",
+   "path": "img/w07.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w08",
+   "role": "scene",
+   "path": "img/w08.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
    "id": "sc_appA",
    "role": "scene",
    "path": "img/appA.webp",

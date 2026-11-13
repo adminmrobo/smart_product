@@ -206,6 +206,80 @@
    "id": "lab:concept/sm-appA-06",
    "type": "Concept",
    "label": {
+    "ko": "AI4I 2024 미니 v2 (7주 불량 분석판)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-ai4i2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — ai4i_2024_mini_v2.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-06-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "AI4I 미니 v2 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-ai4i2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-07",
+   "type": "Concept",
+   "label": {
+    "ko": "불량품 판정 데이터 v2 (7주 층별판)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-defect2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — defect_judgement_v2.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-07-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "판재 판정 v2 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-defect2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-08",
+   "type": "Concept",
+   "label": {
     "ko": "면류 일별 검색·판매·프로모션",
     "en": ""
    },
@@ -225,7 +299,7 @@
    }
   },
   {
-   "id": "lab:quiz/sm-appA-06-1",
+   "id": "lab:quiz/sm-appA-08-1",
    "type": "QuizItem",
    "label": {
     "ko": "면류 일별 데이터를 쓰는 주차는?",
@@ -240,7 +314,7 @@
    "match": []
   },
   {
-   "id": "lab:concept/sm-appA-07",
+   "id": "lab:concept/sm-appA-09",
    "type": "Concept",
    "label": {
     "ko": "면류 생산계획 시트 묶음 (xlsx)",
@@ -262,7 +336,7 @@
    }
   },
   {
-   "id": "lab:quiz/sm-appA-07-1",
+   "id": "lab:quiz/sm-appA-09-1",
    "type": "QuizItem",
    "label": {
     "ko": "면류 계획 데이터를 쓰는 주차는?",
@@ -277,7 +351,7 @@
    "match": []
   },
   {
-   "id": "lab:concept/sm-appA-08",
+   "id": "lab:concept/sm-appA-10",
    "type": "Concept",
    "label": {
     "ko": "판정 샘플·모델 비교 묶음 (목록만)",
@@ -299,7 +373,7 @@
    }
   },
   {
-   "id": "lab:quiz/sm-appA-08-1",
+   "id": "lab:quiz/sm-appA-10-1",
    "type": "QuizItem",
    "label": {
     "ko": "m1·m2 묶음 데이터를 쓰는 주차는?",
@@ -314,7 +388,7 @@
    "match": []
   },
   {
-   "id": "lab:concept/sm-appA-09",
+   "id": "lab:concept/sm-appA-11",
    "type": "Concept",
    "label": {
     "ko": "업종별 가상 공장 6종 (OT 계획)",
@@ -336,7 +410,7 @@
    }
   },
   {
-   "id": "lab:quiz/sm-appA-09-1",
+   "id": "lab:quiz/sm-appA-11-1",
    "type": "QuizItem",
    "label": {
     "ko": "가상 공장 6종 데이터를 쓰는 주차는?",
@@ -461,83 +535,125 @@
    "s": "lab:concept/sm-appA-06",
    "p": "lab:broader",
    "o": "lab:topic/smart-manufacturing-appA",
-   "anchor": "#ds-noodle",
+   "anchor": "#ds-ai4i2",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-05",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/sm-appA-06",
-   "anchor": "#ds-noodle",
+   "anchor": "#ds-ai4i2",
    "confidence": "medium"
   },
   {
    "s": "lab:quiz/sm-appA-06-1",
    "p": "lab:assesses",
    "o": "lab:concept/sm-appA-06",
-   "anchor": "#q-ds-noodle",
+   "anchor": "#q-ds-ai4i2",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-07",
    "p": "lab:broader",
    "o": "lab:topic/smart-manufacturing-appA",
-   "anchor": "#ds-plan",
+   "anchor": "#ds-defect2",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-06",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/sm-appA-07",
-   "anchor": "#ds-plan",
+   "anchor": "#ds-defect2",
    "confidence": "medium"
   },
   {
    "s": "lab:quiz/sm-appA-07-1",
    "p": "lab:assesses",
    "o": "lab:concept/sm-appA-07",
-   "anchor": "#q-ds-plan",
+   "anchor": "#q-ds-defect2",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-08",
    "p": "lab:broader",
    "o": "lab:topic/smart-manufacturing-appA",
-   "anchor": "#ds-m12",
+   "anchor": "#ds-noodle",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-07",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/sm-appA-08",
-   "anchor": "#ds-m12",
+   "anchor": "#ds-noodle",
    "confidence": "medium"
   },
   {
    "s": "lab:quiz/sm-appA-08-1",
    "p": "lab:assesses",
    "o": "lab:concept/sm-appA-08",
-   "anchor": "#q-ds-m12",
+   "anchor": "#q-ds-noodle",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-09",
    "p": "lab:broader",
    "o": "lab:topic/smart-manufacturing-appA",
-   "anchor": "#ds-six",
+   "anchor": "#ds-plan",
    "confidence": "high"
   },
   {
    "s": "lab:concept/sm-appA-08",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/sm-appA-09",
-   "anchor": "#ds-six",
+   "anchor": "#ds-plan",
    "confidence": "medium"
   },
   {
    "s": "lab:quiz/sm-appA-09-1",
    "p": "lab:assesses",
    "o": "lab:concept/sm-appA-09",
+   "anchor": "#q-ds-plan",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-10",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-m12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-09",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-10",
+   "anchor": "#ds-m12",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-10-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-10",
+   "anchor": "#q-ds-m12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-11",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-six",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-10",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-11",
+   "anchor": "#ds-six",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-11-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-11",
    "anchor": "#q-ds-six",
    "confidence": "high"
   }

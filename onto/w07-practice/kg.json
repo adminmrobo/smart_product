@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "page": "w07-practice",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw07r",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 w07 실습 계산",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#refs",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:claim/sm-w07-finding",
+   "type": "Claim",
+   "label": {
+    "ko": "이 데이터(기어 가공 100개, 불량 13개)에서 열 방출 고장(hdf) 4건은 모두 「회전 1,418~1,443rpm × 온도차 6.6~26.8K」 칸(n=13, 불량률 38%)에, 과부하 고장(osf) 3건은 모",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#summary",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 데이터(기어 가공 100개, 불량 13개)에서 열 방출 고장(hdf) 4건은 모두 「회전 1,418~1,443rpm × 온도차 6.6~26.8K」 칸(n=13, 불량률 38%)에, 과부하 고장(osf) 3건은 모두 「마모 67.9~117.1분 × 토크 51.0~56.2Nm」 칸(n=10, 30%)에 몰려 있었습니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw07r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:dataset/sm-w07",
+   "type": "Dataset",
+   "label": {
+    "ko": "수업 데이터 (가상)",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#sec-r7-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 리포트가 계산에 쓴 수업용 데이터"
+   }
+  },
+  {
+   "id": "lab:method/sm-w07",
+   "type": "Method",
+   "label": {
+    "ko": "방법 — 방법 — 세기 → 파레토 → 층별 → 자리 지도",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#sec-r7-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "방법 — 세기 → 파레토 → 층별 → 자리 지도"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w07",
+   "type": "Limitation",
+   "label": {
+    "ko": "의의와 한계",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#sec-r7-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "가상 데이터·작은 표본 등 리포트가 밝힌 한계"
+   }
+  },
+  {
+   "id": "lab:question/sm-w07",
+   "type": "Question",
+   "label": {
+    "ko": "추측·후속 과제",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#sec-r7-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "반론과 다른 설명 장의 추측"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w07-alt",
+   "type": "Claim",
+   "label": {
+    "ko": "반론과 다른 설명",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#sec-r7-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "같은 결과를 달리 설명하는 길"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w07-ev1",
+   "type": "Claim",
+   "label": {
+    "ko": "원인 건수는 14건(UID 042 겹침)이고, twf·hdf 두 원인이 57.1%를 차지합니다(그림 1).",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 원인 건수는 14건(UID 042 겹침)이고, twf·hdf 두 원인이 57.1%를 차지합니다(그림 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw07r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w07-ev2",
+   "type": "Claim",
+   "label": {
+    "ko": "한 컬럼 층별에서 2배(26%) 이상인 구간은 마모 상위 28%와 회전 하위 28% 둘뿐입니다(표 2).",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 한 컬럼 층별에서 2배(26%) 이상인 구간은 마모 상위 28%와 회전 하위 28% 둘뿐입니다(표 2)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw07r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w07-ev3",
+   "type": "Claim",
+   "label": {
+    "ko": "두 축 자리 지도에서는 원인 하나가 칸 하나에 모입니다. 마모 상위 × 토크 중간 칸(n=11)의 불량 3건은 모두 twf입니다(표 3).",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 두 축 자리 지도에서는 원인 하나가 칸 하나에 모입니다. 마모 상위 × 토크 중간 칸(n=11)의 불량 3건은 모두 twf입니다(표 3)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw07r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w07-ev4",
+   "type": "Claim",
+   "label": {
+    "ko": "한 축 기준보다 두 축 칸이 원인을 더 날카롭게 가릅니다. 다만 칸마다 n이 10~13이라, 이 결과는 「함께 나타남」의 수준으로 읽습니다.",
+    "en": ""
+   },
+   "page": "w07-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "해석 한 축 기준보다 두 축 칸이 원인을 더 날카롭게 가릅니다. 다만 칸마다 n이 10~13이라, 이 결과는 「함께 나타남」의 수준으로 읽습니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw07r",
+     "loc": "Summary"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/sm-w07-finding",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026smw07r",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w07",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/sm-w07",
+   "anchor": "#sec-r7-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w07",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#sec-r7-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-finding",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w07",
+   "anchor": "#sec-r7-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-finding",
+   "p": "lab:raises",
+   "o": "lab:question/sm-w07",
+   "anchor": "#sec-r7-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-alt",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#sec-r7-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:method/sm-w07",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w07",
+   "anchor": "#sec-r7-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-ev1",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-ev2",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-ev3",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w07-ev4",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w07-finding",
+   "anchor": "#summary",
+   "confidence": "medium"
+  }
+ ]
+}

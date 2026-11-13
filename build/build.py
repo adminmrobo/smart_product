@@ -25,8 +25,8 @@ CHAPTERS = [
     ('w04', '04', '분류와 회귀 — 데이터에 말 걸기', 'SECTION 2 · 데이터', 'built'),
     ('w05', '05', '작업지시서와 한 페이지 앱', 'SECTION 2 · 데이터', 'built'),
     ('w06', '06', 'REVIEW — 1~5주 다시 보기', 'REVIEW', 'built'),
-    ('w07', '07', '불량 분석 ① 어디서 터지는가', 'SECTION 3 · 분석', 'slot'),
-    ('w08', '08', '중간 제출 — 제안서', '제출 · 중간', 'slot'),
+    ('w07', '07', '불량 분석 ① 어디서 터지는가', 'SECTION 3 · 분석', 'built'),
+    ('w08', '08', '중간 점검 — 보고서 주제 카드', '중간 점검', 'built'),
     ('w09', '09', '불량 분석 ② 왜 터지는가', 'SECTION 3 · 분석', 'slot'),
     ('w10', '10', '설비 효율(OEE) 분석', 'SECTION 3 · 분석', 'slot'),
     ('w11', '11', '시각화 & 1페이지 대시보드', 'SECTION 3 · 분석', 'slot'),
@@ -355,10 +355,10 @@ def render_slot(slug, num, title, sec):
 
 
 FACTORY = {'w01': '사출성형 A라인', 'w02': '케이블 하네스 조립', 'w03': '빙과·호빵 식품 공장', 'w04': '금속 판재 경화·검사', 'w05': 'CNC 밀링 가공 셀', 'w06': '면류 공장·물류',
-           'w07': '(준비 중)', 'w08': '(제출 주간)', 'w09': '(준비 중)', 'w10': '(준비 중)', 'w11': '(준비 중)', 'w12': '(준비 중)', 'w13': '(준비 중)', 'w14': '(준비 중)', 'w15': '(준비 중)',
+           'w07': '기어 가공 라인', 'w08': 'SMT 전자부품 실장 라인', 'w09': '(준비 중)', 'w10': '(준비 중)', 'w11': '(준비 중)', 'w12': '(준비 중)', 'w13': '(준비 중)', 'w14': '(준비 중)', 'w15': '(준비 중)',
            'appA': '자재창고', 'appB': '공무실'}
 SHORT = {'w01': 'OT·스마트 제조', 'w02': '생성형 AI·프롬프트', 'w03': '생산실적 추세', 'w04': '분류·회귀', 'w05': '작업지시서·앱', 'w06': 'REVIEW 1~5주',
-         'w07': '불량 ① 어디서', 'w08': '중간 제안서', 'w09': '불량 ② 왜', 'w10': 'OEE', 'w11': '대시보드', 'w12': '생산일보', 'w13': '품질보고서', 'w14': 'SOP', 'w15': 'REVIEW·기말',
+         'w07': '불량 ① 어디서', 'w08': '중간 점검·주제 카드', 'w09': '불량 ② 왜', 'w10': 'OEE', 'w11': '대시보드', 'w12': '생산일보', 'w13': '품질보고서', 'w14': 'SOP', 'w15': 'REVIEW·기말',
          'appA': '데이터 창고', 'appB': '프롬프트 공구함'}
 
 
@@ -380,22 +380,22 @@ def render_hub():
         pr = f' · <a href="weeks/{slug}/practice.html">실습 리포트</a>' if prac else ''
         cards.append(f'<div class="panel" style="margin:0;{"opacity:.6" if status == "slot" else ""}"><div style="display:flex;gap:10px;align-items:center"><div class="hex" style="width:44px;height:50px;font-size:14px;{"background:#4a4f63;color:#ccc" if status == "slot" else "background:#f1b646" if review else "background:#82b8ff" if status == "app" else ""}">{num}</div><div><b><a href="{href}" style="color:var(--text);text-decoration:none">{title}</a></b><div style="font-size:13px;color:var(--muted)">{sec} · {FACTORY[slug]}</div></div></div><p style="margin:8px 0 0;font-size:14px">{tag} {meta}{pr}</p></div>')
     goals = ''.join(f'<li><b>{a}</b> — {b}</li>' for a, b in [('데이터 이해', '생산일보·품질 데이터의 구조를 읽고, 생산량·불량률·OEE의 의미를 설명합니다.'), ('AI 분석', '엑셀 파일을 AI에 올려 정제·집계·추세·원인분석까지 대화만으로 수행합니다.'), ('시각화', '자연어 지시로 차트와 1페이지 대시보드를 만들고, 보고 목적에 맞는 차트를 고릅니다.'), ('문서 자동화', '생산일보·품질보고서·작업지시서·SOP를 표준 프롬프트로 자동 생성합니다.'), ('공정 자동화', '데이터 수집 → AI 분석 → 보고서 발송까지 이어지는 자동 흐름을 1개 구축합니다.'), ('현장 적용', '자신의 공정에 맞는 개선 과제를 정의하고 90일 실행계획으로 제안합니다.')])
-    html_ = f'''{head("스마트 제조 연구실 — 3D로 보는 15주", "스마트 제조(AI212) 15주 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 1~6주 공개, 7~15주 준비 중.", root, three=True)}
+    html_ = f'''{head("스마트 제조 연구실 — 3D로 보는 15주", "스마트 제조(AI212) 15주 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 1~8주 공개, 9~15주 준비 중.", root, three=True)}
 <body data-root="{root}">{nav(root, [("#campus", "캠퍼스"), ("#course", "강좌 개요"), ("#chapters", "17개 챕터"), ("#cast", "등장인물")])}
 <header class="hero"><div class="wrap">
 <span class="eyebrow">AI212 · 2026-2학기 · 스마트 제조 · 노코딩</span>
 <h1>스마트 제조 연구실 — 3D로 보는 15주</h1>
-<p class="lead">코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다. 주차마다 다른 공장(사출·하네스·식품·판재·CNC·면류)이 3D로 서 있고, 연구실 식구들이 그 공정 위에서 안내합니다.</p>
-<div class="stage" id="campus" aria-label="15주 공장 캠퍼스 3D. 주차별 작업장 17개가 컨베이어로 이어져 있고, 1~6주는 불이 켜져 있으며 7~15주는 준비 중이다. 작업장을 누르면 해당 챕터로 이동한다."><canvas></canvas><div class="hud">3D · 작업장을 누르면 그 주차로 들어갑니다 · 초록 컨베이어 = 공개된 주차</div><div class="hud2" id="hud2"></div></div>
+<p class="lead">코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다. 주차마다 다른 공장(사출·하네스·식품·판재·CNC·면류·기어·SMT)이 3D로 서 있고, 연구실 식구들이 그 공정 위에서 안내합니다.</p>
+<div class="stage" id="campus" aria-label="15주 공장 캠퍼스 3D. 주차별 작업장 17개가 컨베이어로 이어져 있고, 1~8주는 불이 켜져 있으며 9~15주는 준비 중이다. 작업장을 누르면 해당 챕터로 이동한다."><canvas></canvas><div class="hud">3D · 작업장을 누르면 그 주차로 들어갑니다 · 초록 컨베이어 = 공개된 주차</div><div class="hud2" id="hud2"></div></div>
 <p style="font-size:13px;color:var(--muted);margin-top:-6px">끌어서 돌리고, 휠·두 손가락으로 확대합니다. 청록 = 공개 · 노랑 = REVIEW · 회색 = 빈 슬롯 · 파랑 = 부록</p>
-<div class="kpis"><div class="kpi g"><b>6 / 15</b><span>공개된 주차 (7~15주 준비 중)</span></div><div class="kpi a"><b>17</b><span>챕터 (15주 + 부록 2)</span></div><div class="kpi m"><b>{sum(1 for c in chaps if c["status"] != "slot")}</b><span>공개 챕터</span></div><div class="kpi r"><b>5</b><span>실습 리포트 (2~6주)</span></div></div>
-{talk([("doc", "e08", "어서 오세요. 스마트 제조 연구실입니다. 주차마다 공장이 하나씩 서 있습니다."), ("asst", "e01", "1주 사출성형 라인부터 6주 면류 공장까지 열려 있어요!"), ("fly", "e09", "7주부터는 아직 불이 꺼져 있어. 자료가 오면 하나씩 켤 거야."), ("robo", "e16", "저는 컨베이어 끝까지 달려가겠습니다!")])}
+<div class="kpis"><div class="kpi g"><b>8 / 15</b><span>공개된 주차 (9~15주 준비 중)</span></div><div class="kpi a"><b>17</b><span>챕터 (15주 + 부록 2)</span></div><div class="kpi m"><b>{sum(1 for c in chaps if c["status"] != "slot")}</b><span>공개 챕터</span></div><div class="kpi r"><b>7</b><span>실습 리포트 (2~8주)</span></div></div>
+{talk([("doc", "e08", "어서 오세요. 스마트 제조 연구실입니다. 주차마다 공장이 하나씩 서 있습니다."), ("asst", "e01", "1주 사출성형 라인부터 8주 SMT 라인까지 열려 있어요!"), ("fly", "e09", "9주부터는 아직 불이 꺼져 있어. 자료가 오면 하나씩 켤 거야."), ("robo", "e16", "저는 컨베이어 끝까지 달려가겠습니다!")])}
 </div></header><main>
 <section id="course"><div class="wrap"><h2>강좌 개요</h2>
 <p>이 강좌는 IoT, AI, 빅데이터 등 첨단 기술을 활용해 제조업의 효율성과 생산성을 높이는 방법을 배웁니다. 스마트 팩토리 시스템을 구축하고 운영하는 데 필요한 기술과 전략을 다룹니다. 센서·자동화·데이터 분석으로 실시간 모니터링과 예측 유지보수를 구현하는 방법을 배우고, 산업 현장의 스마트 기술 적용 사례와 최신 제조 기술 동향을 학습합니다.</p>
 <h3>학습 목표</h3><ol>{goals}</ol>
 <div class="steps big" style="--n:4"><div><b>SECTION 1 · 준비</b><p style="margin:6px 0 0">1~2주 · AI에게 말 거는 법</p></div><div><b>SECTION 2 · 데이터</b><p style="margin:6px 0 0">3~5주 · 읽고, 청소하고, 물어보기</p></div><div><b>SECTION 3 · 분석</b><p style="margin:6px 0 0">6~11주 · 6주 REVIEW, 8주 중간 제출</p></div><div><b>SECTION 4 · 자동화</b><p style="margin:6px 0 0">12~15주 · 15주 REVIEW·기말 제출</p></div></div>
-<p style="font-size:14px;color:var(--muted)">시험일자는 학교 학사 일정 등에 따라 달라질 수 있습니다. 이 사이트의 주차 배정은 실제 진행 자료(1~5주 교안)를 따랐고, 7~15주 제목은 OT 교안의 주차별 계획에서 가져왔습니다.</p>
+<p style="font-size:14px;color:var(--muted)">시험일자는 학교 학사 일정 등에 따라 달라질 수 있습니다. 이 사이트의 주차 배정은 실제 진행 자료(1~8주 교안)를 따랐고, 9~15주 제목은 OT 교안의 주차별 계획에서 가져왔습니다.</p>
 </div></section>
 <section id="chapters"><div class="wrap"><h2>17개 챕터</h2><div class="toc" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">{"".join(cards)}</div></div></section>
 <section id="cast"><div class="wrap"><h2>등장인물</h2><div class="cast">{"".join(f'<div class="c"><img data-who="{w}" data-mood="{"e13" if w.startswith("x") else "e01"}" alt="{WHO[w]}"><div><b>{WHO[w]}</b><span>{ROLE[w]}</span></div></div>' for w in ["doc", "asst", "fly", "robo", "sia", "moa", "x1", "x2", "x3"])}</div>

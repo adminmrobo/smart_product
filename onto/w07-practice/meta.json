@@ -1,0 +1,35 @@
+{
+ "title": "불량 13개는 어디에 몰렸나? — 기어 라인 100개를 세고, 나누고, 지도에 찍다",
+ "number": "w07-R",
+ "series": "스마트 제조 연구실",
+ "about": [
+  "lab:claim/sm-w07-finding"
+ ],
+ "basedOn": [
+  "ahn2026smw07r"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-13",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/smart_product/weeks/w07/practice.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "finding report",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 불량 13개는 어디에 몰렸나? — 기어 라인 100개를 세고, 나누고, 지도에 찍다. 스마트 제조 연구실 w07-R, v1.0."
+}

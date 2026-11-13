@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "page": "w08-practice",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw08r",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 w08 실습 계산",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#refs",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:claim/sm-w08-finding",
+   "type": "Claim",
+   "label": {
+    "ko": "이 데이터(판재 1,000장, 불량 33장, 3.3%)에서 거칠기 문턱을 올려 가면 약 3.6µm 이상(159장)에서 불량률 6.9%로 전체의 2배를 처음 넘고, 4.32µm 초과 상위 5%(50장)에는 불량 9장(",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#summary",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 데이터(판재 1,000장, 불량 33장, 3.3%)에서 거칠기 문턱을 올려 가면 약 3.6µm 이상(159장)에서 불량률 6.9%로 전체의 2배를 처음 넘고, 4.32µm 초과 상위 5%(50장)에는 불량 9장(18%)이 몰려 있었습니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw08r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:dataset/sm-w08",
+   "type": "Dataset",
+   "label": {
+    "ko": "수업 데이터 (가상)",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#sec-r8-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 리포트가 계산에 쓴 수업용 데이터"
+   }
+  },
+  {
+   "id": "lab:method/sm-w08",
+   "type": "Method",
+   "label": {
+    "ko": "방법 — 방법 — 세기 → 구간 → 문턱 → 나머지",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#sec-r8-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "방법 — 세기 → 구간 → 문턱 → 나머지"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w08",
+   "type": "Limitation",
+   "label": {
+    "ko": "의의와 한계",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#sec-r8-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "가상 데이터·작은 표본 등 리포트가 밝힌 한계"
+   }
+  },
+  {
+   "id": "lab:question/sm-w08",
+   "type": "Question",
+   "label": {
+    "ko": "추측·후속 과제",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#sec-r8-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "반론과 다른 설명 장의 추측"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w08-alt",
+   "type": "Claim",
+   "label": {
+    "ko": "반론과 다른 설명",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#sec-r8-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "같은 결과를 달리 설명하는 길"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w08-ev1",
+   "type": "Claim",
+   "label": {
+    "ko": "같은 행 수 5구간으로 나누면 최고 구간은 거칠기 상위 6.1%(12/198)로 2배(6.6%)에 못 미칩니다(표 1).",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 같은 행 수 5구간으로 나누면 최고 구간은 거칠기 상위 6.1%(12/198)로 2배(6.6%)에 못 미칩니다(표 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw08r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w08-ev2",
+   "type": "Claim",
+   "label": {
+    "ko": "문턱 3.42µm 이상은 6.0%(12/201), 3.6µm 이상은 6.9%(11/159), 4.2µm 이상은 15.0%(9/60)입니다(그림 1).",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 문턱 3.42µm 이상은 6.0%(12/201), 3.6µm 이상은 6.9%(11/159), 4.2µm 이상은 15.0%(9/60)입니다(그림 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw08r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w08-ev3",
+   "type": "Claim",
+   "label": {
+    "ko": "20구간으로 나누면 맨 위 구간(4.32µm 초과, 50장)에 불량 9장, 바로 아래 구간(48장)은 0장입니다.",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 20구간으로 나누면 맨 위 구간(4.32µm 초과, 50장)에 불량 9장, 바로 아래 구간(48장)은 0장입니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw08r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w08-ev4",
+   "type": "Claim",
+   "label": {
+    "ko": "거칠기는 불량 33장 중 약 9장을 가르는 신호입니다. 나머지 24장은 거칠기와 무관하게 약 2.5%로 고르게 퍼져 있어, 다른 원인을 따로 찾아야 합니다.",
+    "en": ""
+   },
+   "page": "w08-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "해석 거칠기는 불량 33장 중 약 9장을 가르는 신호입니다. 나머지 24장은 거칠기와 무관하게 약 2.5%로 고르게 퍼져 있어, 다른 원인을 따로 찾아야 합니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw08r",
+     "loc": "Summary"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/sm-w08-finding",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026smw08r",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w08",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/sm-w08",
+   "anchor": "#sec-r8-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w08",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#sec-r8-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-finding",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w08",
+   "anchor": "#sec-r8-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-finding",
+   "p": "lab:raises",
+   "o": "lab:question/sm-w08",
+   "anchor": "#sec-r8-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-alt",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#sec-r8-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:method/sm-w08",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w08",
+   "anchor": "#sec-r8-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-ev1",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-ev2",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-ev3",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w08-ev4",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w08-finding",
+   "anchor": "#summary",
+   "confidence": "medium"
+  }
+ ]
+}

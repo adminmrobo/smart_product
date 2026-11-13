@@ -497,6 +497,80 @@
    "confidence": "high",
    "coverage": "explained",
    "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-14",
+   "type": "Concept",
+   "label": {
+    "ko": "자리 지도 + 다시 세기 (카드 05 · 검증)",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-map",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — (나) 회전 1,418~1,443rpm × 온도차 6.6~26.8K = 5/13 = 38%."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-14-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-map",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-15",
+   "type": "Concept",
+   "label": {
+    "ko": "주제 카드 다듬기",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-tidy",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 다섯 조건마다"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-15-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-tidy",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
   }
  ],
  "edges": [
@@ -771,6 +845,48 @@
    "p": "lab:assesses",
    "o": "lab:concept/sm-appB-13",
    "anchor": "#q-pb-plan",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-14",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-13",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-14",
+   "anchor": "#pb-map",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-14-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-14",
+   "anchor": "#q-pb-map",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-15",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-tidy",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-14",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-15",
+   "anchor": "#pb-tidy",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-15-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-15",
+   "anchor": "#q-pb-tidy",
    "confidence": "high"
   }
  ]

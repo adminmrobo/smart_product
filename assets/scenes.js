@@ -35,7 +35,7 @@ export const scenes = {
     const T = api.THREE;
     for (let i = 0; i < 14; i++) { const a = pos[i], b = pos[i + 1]; const len = Math.hypot(b[0] - a[0], b[1] - a[1]); const m = api.box(len, .1, .5, '#24404a', { x: (a[0] + b[0]) / 2, z: (a[1] + b[1]) / 2, y: .05, shadow: false }); m.rotation.y = -Math.atan2(b[1] - a[1], b[0] - a[0]); }
     const tokens = []; for (let k = 0; k < 6; k++) { const t = api.box(.5, .4, .5, '#5ee39c', { y: .4 }); t.userData.u = k / 6; tokens.push(t); }
-    api.tick((t, dt) => tokens.forEach(m => { m.userData.u = (m.userData.u + dt * .02) % 1; const f = m.userData.u * 14, i = Math.floor(f), r = f - i; const a = pos[i], b = pos[i + 1]; m.position.x = a[0] + (b[0] - a[0]) * r; m.position.z = a[1] + (b[1] - a[1]) * r; m.material = api.mat(i < 5 ? '#5ee39c' : i === 5 ? '#f1b646' : '#4a4f63'); }));
+    api.tick((t, dt) => tokens.forEach(m => { const u = (m.userData.u + (dt > 0 && dt < 1 ? dt : 0) * .02) % 1; m.userData.u = u >= 0 ? u : 0; const f = m.userData.u * 14, i = Math.min(13, Math.max(0, Math.floor(f))), r = f - i; const a = pos[i], b = pos[i + 1]; if (!a || !b) return; m.position.x = a[0] + (b[0] - a[0]) * r; m.position.z = a[1] + (b[1] - a[1]) * r; m.material = api.mat(i === 5 ? '#f1b646' : i < 7 ? '#5ee39c' : '#4a4f63'); }));
     await api.chars([{ key: 'doctor', x: -6, z: 9.5, ry: .2, pose: 'wave', tip: '박사', unit: 2.4 }, { key: 'haru', x: -3.8, z: 9.8, pose: 'wave', tip: '조수(하루)', unit: 2.4 }, { key: 'fruitfly', x: -1.6, z: 9.6, pose: 'think', tip: '초파리 연구원', unit: 2.4 }, { key: 'jupanbot', x: .6, z: 9.9, pose: 'cheer', tip: '주판봇', unit: 2.4 }, { key: 'sia', x: 2.8, z: 9.6, pose: 'idle', tip: '인턴 시아 (조수1)', unit: 2.4 }, { key: 'moa', x: 5, z: 9.9, pose: 'wave', tip: '인턴 모아 (조수2)', unit: 2.4 }, { key: 'x1', x: 8, z: 10.5, pose: 'cheer', unit: 2.4 }, { key: 'x2', x: 9.8, z: 10.3, unit: 2.4 }, { key: 'x3', x: 11.4, z: 10.6, pose: 'wave', unit: 2.4 }]);
   },
   // 1주차 · 사출성형 A라인 + 스마트공장 수준 레이어
@@ -179,12 +179,68 @@ export const scenes = {
     await api.chars([{ key: 'doctor', x: -12, z: 1.2, ry: .3, pose: 'explain' }, { key: 'haru', x: -10.4, z: 1.5, pose: 'wave' }, { key: 'fruitfly', x: -6.6, z: 1.2, pose: 'think' }, { key: 'jupanbot', x: -5, z: 1.5, pose: 'cheer' }, { key: 'sia', x: 0, z: 1.2, pose: 'idle' }, { key: 'moa', x: 1.6, z: 1.5, pose: 'cheer' }, ...crowd(6, 1.6)]);
   },
 
+  // 7주차 · 기어 가공 라인 (호빙·열처리·연삭·검사) + 파레토 기둥 + 자리 지도 바닥
+  async w07(api, stage) {
+    wall(api, { title: '기어 가공 라인 · 불량은 어디서 터지는가', len: 48 });
+    const CAUSE = [['twf', '공구 마모', '#f1b646', 4], ['hdf', '열 방출', '#f0604d', 4], ['osf', '과부하', '#d672d6', 3], ['pwf', '전력', '#82b8ff', 2], ['rnf', '무작위', '#9aa5aa', 1]];
+    const R = rng(7);
+    const line = processLine(api, [
+      { type: 'hopper', name: '소재 투입', tip: '기어 소재(단조품) 100개 · UID 001~100', w: 2 },
+      { type: 'cnc', name: '호빙(치형 가공)', tip: '회전수 rotational_speed_rpm · 토크 torque_nm · 공구 마모 tool_wear_min', w: 3, ly: 5.2 },
+      { type: 'oven', name: '열처리', tip: '공정 온도 − 공기 온도 = temp_diff (열이 빠지는 여유)', w: 4.4, opts: { len: 4.4 } },
+      { type: 'cnc', name: '연삭', tip: '치면 연삭 · 마모가 쌓인 공구에 큰 힘이 걸리면 과부하(osf)', w: 3, ly: 5.2, opts: { color: '#c9d6d8' } },
+      { type: 'gate', name: '치형 검사', tip: 'machine_failure = 1이면 불량 · 원인 라벨 5종', w: 2.2, opts: { color: '#f1b646' } },
+      { type: 'packer', name: '출하', tip: '양품 출하', w: 2.6 },
+    ], { x0: -18, z: 1.2, colors: ['#9aa5aa', '#c9a24a', '#e8d39a', '#dfe6e8'], speed: .03, items: 13, itemShape: 'cyl', onItem: (m, px, k) => {
+      if (m.userData.last == null || px < m.userData.last) m.userData.bad = R() < .13;
+      m.userData.last = px; if (m.userData.bad && k >= 4) m.material = api.mat('#f0604d');
+    } });
+    // 파레토 기둥 (원인 건수) — 벽 앞
+    const par = api.group({ x: 9, z: -6 });
+    let cum = 0; CAUSE.forEach((c, i) => { cum += c[3]; api.box(1.1, c[3] * .9, 1.1, c[2], { parent: par, x: i * 1.5, y: c[3] * .45, tip: `<b>${c[0]} · ${c[1]}</b><br>${c[3]}건 · 누적 ${(cum / 14 * 100).toFixed(1)}%` }); api.label(c[0], { parent: par, x: i * 1.5, y: c[3] * .9 + .5, size: .45, bg: 'none' }); });
+    api.box(7.4, .06, .06, '#f1b646', { parent: par, x: 3, y: 3.6 * .9 * .8 + .4 }); api.label('파레토 · 원인 건수 14 (불량 부품 13)', { parent: par, x: 3, y: 5.2, size: .55 });
+    // 자리 지도 바닥 (3×3) — 데이터는 본문 스크립트가 window.H7 로 넘긴다
+    const H = window.H7 || []; const maps = H.map((h, j) => {
+      const g = api.group({ x: -10, z: -5.6 }); g.visible = j === 0;
+      h.cells.forEach((row, a) => row.forEach((c, b) => { const r = c[0], n = c[1]; const v = Math.min(1, r / .4);
+        const col = n < 5 ? '#4a4f63' : '#' + [255, Math.round(240 - 150 * v), Math.round(220 - 200 * v)].map(x => x.toString(16).padStart(2, '0')).join('');
+        api.box(1.7, .15 + r * 4, 1.7, col, { parent: g, x: b * 1.9, z: a * 1.6 - 1.6, y: (.15 + r * 4) / 2, tip: `<b>${h.x} ${h.xl[a]} × ${h.y} ${h.yl[b]}</b><br>불량률 ${(r * 100).toFixed(0)}% (n=${n})${n < 5 ? ' · 표본 부족' : ''}` }); }));
+      api.label(`자리 지도 · ${h.name}`, { parent: g, x: 1.9, y: 2.9, z: -1.6, size: .55 }); return g; });
+    if (maps.length) hudButtons(stage, H.map(h => h.name), i => { maps.forEach((g, j) => { g.visible = i === j; }); api.render && api.render(); });
+    await api.chars([{ key: 'doctor', x: 4, z: 6.5, ry: -.3, pose: 'explain' }, { key: 'haru', x: 2.2, z: 6.8, pose: 'hold' }, { key: 'fruitfly', x: -6, z: -1.6, ry: Math.PI * .8, pose: 'think' }, { key: 'jupanbot', x: 16, z: -3.2, ry: -1.2, pose: 'cheer' }, { key: 'sia', x: 11, z: 5, pose: 'referee' }, { key: 'moa', x: 12.8, z: 5.3, pose: 'hold' }, ...crowd(-15, 6.5)]);
+  },
+
+  // 8주차 · 중간 점검 · SMT 전자부품 실장 라인 + 주제 카드 게시판·신호등
+  async w08(api, stage) {
+    wall(api, { title: 'SMT 실장 라인 · 중간 점검 — 주제 카드 검토', len: 48 });
+    processLine(api, [
+      { type: 'rack', name: 'PCB 투입', tip: '빈 기판 매거진', w: 2.8, opts: { n: 2, box: '#2e8b57' } },
+      { type: 'packer', name: '솔더 인쇄', tip: '스텐실로 납 페이스트를 찍는다', w: 2.6, opts: { color: '#55666a' } },
+      { type: 'robot', name: '부품 실장(마운터)', tip: '칩 부품을 집어 기판에 올린다', w: 2.4, ly: 5 },
+      { type: 'oven', name: '리플로 오븐', tip: '온도 구간을 지나며 납이 녹아 붙는다', w: 5, opts: { len: 5 } },
+      { type: 'gate', name: 'AOI 검사', tip: '자동 광학 검사 · 부품 누락·틀어짐·납땜 불량', w: 2.2, opts: { color: '#5ee39c' } },
+      { type: 'packer', name: '포장', tip: '완성 기판 포장', w: 2.6 },
+    ], { x0: -19, z: 1.4, colors: ['#2e8b57', '#4a9a6a', '#7bc48f', '#c9d6d8'], speed: .03, items: 12 });
+    // 주제 카드 여섯 칸 게시판
+    const CELLS = ['01 질문', '02 데이터', '03 방법', '04 산출물', '05 검증·검토', '06 90일 연결'];
+    CELLS.forEach((c, i) => { const x = -13 + i * 3.2; api.box(2.8, 1.6, .12, '#f3efe2', { x, y: 3.1, z: -8.75, tip: `<b>주제 카드 ${c}</b>` }); api.label(c, { x, y: 3.1, z: -8.55, size: .45, bg: 'none', color: '#1d1d1d' }); });
+    // 신호등 탑
+    const L = [['#5ee39c', '초록 · 그대로 간다'], ['#f1b646', '노랑 · 좁혀서 간다'], ['#f0604d', '빨강 · 다시 고른다']];
+    api.box(.25, 4, .25, '#3f4a50', { x: 10, z: -5, y: 2 });
+    const lamps = L.map((l, i) => api.cyl(.45, .55, l[0], { x: 10, y: 5.6 - i * .62, z: -5, m: { emissive: l[0], emissiveIntensity: .1 }, tip: `<b>${l[1]}</b>` }));
+    let on = 1; const sign = api.label('신호등 · 노랑 — 좁혀서 간다', { x: 10, y: 6.9, z: -5, size: .55 });
+    const set = i => { on = i; lamps.forEach((m, j) => { m.material.emissiveIntensity = j === i ? 1.1 : .08; }); api.relabel(sign, '신호등 · ' + L[i][1], { size: .55 }); api.render && api.render(); };
+    set(1); hudButtons(stage, L.map(l => l[1].split(' · ')[0]), set, 1);
+    P.panel(api, { x: 14, z: -2, tip: '검토 화면 · 한 사람 2~3분' });
+    await api.chars([{ key: 'doctor', x: 12, z: -3.4, ry: -.8, pose: 'referee' }, { key: 'haru', x: 7.5, z: 6.2, pose: 'hold' }, { key: 'fruitfly', x: -3, z: -5.6, ry: Math.PI, pose: 'think' }, { key: 'jupanbot', x: -1.2, z: -5.8, ry: Math.PI, pose: 'cheer' }, { key: 'sia', x: -10, z: -6, ry: Math.PI, pose: 'referee' }, { key: 'moa', x: 9.2, z: 6.5, pose: 'hold' }, ...crowd(-16, 6.5)]);
+  },
+
   // 부록 A · 공장 자재창고 = 데이터 창고
   async appA(api, stage) {
     wall(api, { title: '자재창고 — 수업 데이터 세트 보관', len: 40 });
     const S = window.DS || [];
     S.forEach((d, i) => {
-      const x = -12 + (i % 5) * 6, z = -4 + Math.floor(i / 5) * 6;
+      const x = -15 + (i % 6) * 6, z = -4 + Math.floor(i / 6) * 6;
       P.rack(api, { x, z, n: 2, box: d.color || '#2bb3a8', tip: `<b>${d.name}</b><br>${d.desc}` });
       api.box(2.8, .9, 1.4, d.color || '#2bb3a8', { x, z: z + 1.6, y: .45, tip: `<b>${d.name}</b><br>${d.desc}`, href: '#' + d.id });
       api.label(d.short, { x, y: 3.6, z, size: .5 });
