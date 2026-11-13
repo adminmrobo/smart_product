@@ -54,7 +54,7 @@ rules:
 - estimated_wear는 0.0~1.0 사이의 숫자다.
 - rationale은 한 줄, 30자 내외.
 
-좋은 분리는 두 자리다 —
+좋은 분리는 두 구간이다 —
 - 정상 부근 (0.0~0.40)
 - 위험 부근 (0.70~1.00)
 
@@ -123,7 +123,7 @@ CH = {
    'talk': [('robo', 'e19', '폭 302.2mm, 거칠기 3.0, 초음파 20! 정상입니다!'), ('fly', 'e09', '폭이 302.1을 넘었잖아. 첫 갈림길부터 다시 가 봐.'), ('moa', 'e01', '슬라이더로 판재를 하나씩 넣어 볼게요!')],
    'widget': ('w4-tree', '<div class="ptitle">실험 · 판재 하나를 나무에 넣어 보기</div><div class="ctrl"><div class="group"><span class="glabel">폭(mm)</span><input type="range" min="297" max="305" step="0.1" value="300" id="tr-w"><span class="val" id="tr-vw"></span></div><div class="group"><span class="glabel">거칠기(μm)</span><input type="range" min="1.5" max="8" step="0.1" value="3.2" id="tr-r"><span class="val" id="tr-vr"></span></div><div class="group"><span class="glabel">초음파(dB)</span><input type="range" min="11" max="40" step="0.5" value="20" id="tr-u"><span class="val" id="tr-vu"></span></div></div><div class="eq" id="tr-out" aria-live="polite"></div>'),
    'code': [('DecisionTreeClassifier(max_depth=3)', '깊이 3짜리 결정나무'), ('export_text(tree)', '갈림길을 글로 꺼내 보기')],
-   'limit': '데이터로 키운 나무에는 "302.12 < 폭 ≤ 302.20이면 불량, 302.20 < 폭 ≤ 302.47이면 정상" 같은 우연한 칸도 생깁니다. 이 페이지는 그런 칸을 빼고 단순하게 옮겼습니다.',
+   'limit': '데이터로 키운 나무에는 "302.12 < 폭 ≤ 302.20이면 불량, 302.20 < 폭 ≤ 302.47이면 정상" 같은 우연한 갈래도 생깁니다. 이 페이지는 그런 갈래를 빼고 단순하게 옮겼습니다.',
    'quiz': [{'q': '의사결정 나무의 끝(잎)에 있는 것은?', 'o': ['숫자', '라벨', '확률만'], 'a': 1, 'why': '분류 나무는 갈래를 따라가 라벨로 끝납니다.'}]},
 
   {'id': 'sec-4-3', 'title': '회귀의 비유 — 안전벨트와 마모', 'tags': ['비유: 닳아 가는 벨트', '데이터: AI4I 마모'],
@@ -194,15 +194,15 @@ CH = {
             '<div class="prompt" data-raw="' + CLS.replace('"', '&quot;') + '">' + CLS.replace('<', '&lt;') + '</div>'],
    'talk': [('asst', 'e07', '마지막에 [대상 입력] 다섯 줄만 바꿔서 QWEN에 보내면 JSON 한 줄이 돌아와요.'), ('robo', 'e19', 'confidence는 빼도 됩니다. 저는 늘 확신하니까요!'), ('fly', 'e03', 'confidence 없이 prediction만 받으면, 애매한 판재를 구분할 수가 없어.')],
    'widget': ('w4-cls', '<div class="ptitle">조립 · AI4I 한 행을 골라 [대상 입력] 만들기</div><div class="ctrl"><label class="glabel" for="cl-s">행 고르기</label><select id="cl-s" style="background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:8px;padding:6px"></select></div><div class="prompt" id="cl-p"></div><div class="eq" id="cl-out" aria-live="polite"></div>'),
-   'limit': 'QWEN의 답은 데이터에서 학습한 모델이 아니라 언어 모델의 추론입니다. few-shot 예시가 둘뿐이라, 열 방산(hdf)·과부하(osf) 같은 유형은 엇갈리기 쉽습니다. 그래서 다음 칸들에서 데이터로 기준을 찾습니다.',
+   'limit': 'QWEN의 답은 데이터에서 학습한 모델이 아니라 언어 모델의 추론입니다. few-shot 예시가 둘뿐이라, 열 방산(hdf)·과부하(osf) 같은 유형은 엇갈리기 쉽습니다. 그래서 다음 절들에서 데이터로 기준을 찾습니다.',
    'quiz': [{'q': 'machine_failure가 0일 때 predicted_failure_mode는?', 'o': ['twf', 'null', '아무거나'], 'a': 1, 'why': '카드 규칙: 정상이면 null입니다.'}]},
 
-  {'id': 'sec-4-9', 'title': '회귀 프롬프트 카드 — 두 자리와 주의 부근', 'tags': ['카드: 회귀', '구간: 0.40 · 0.70'],
+  {'id': 'sec-4-9', 'title': '회귀 프롬프트 카드 — 두 구간과 주의 부근', 'tags': ['카드: 회귀', '구간: 0.40 · 0.70'],
    'body': ['회귀 카드는 입력은 같고 출력만 다릅니다. estimated_wear(0.0~1.0)와 rationale 한 줄입니다.',
-            '좋은 분리는 두 자리입니다. 정상 부근(0.0~0.40)과 위험 부근(0.70~1.00). 0.40과 0.70 사이는 정상·위험 어느 쪽도 강하지 않은 주의 부근입니다.',
+            '좋은 분리는 두 구간입니다. 정상 부근(0.0~0.40)과 위험 부근(0.70~1.00). 0.40과 0.70 사이는 정상·위험 어느 쪽도 강하지 않은 주의 부근입니다.',
             '<div class="prompt" data-raw="' + REG.replace('"', '&quot;') + '">' + REG.replace('<', '&lt;') + '</div>'],
    'talk': [('moa', 'e09', '임계값을 카드 안에 적지 말고 현장 규칙으로 두라고 교안에 있었어요.'), ('doc', 'e10', '맞습니다. 0.40·0.70은 5주차 작업지시서의 분기 기준이 됩니다.')],
-   'widget': ('w4-zone', '<div class="ptitle">실험 · 마모 추정값은 어느 자리에 앉나</div><div class="ctrl"><div class="group"><span class="glabel">estimated_wear</span><input type="range" min="0" max="1" step="0.01" value="0.52" id="zn-v"><span class="val" id="zn-vv"></span></div></div><div class="eq" id="zn-out" aria-live="polite"></div>'),
+   'widget': ('w4-zone', '<div class="ptitle">실험 · 마모 추정값은 어느 구간에 들어가나</div><div class="ctrl"><div class="group"><span class="glabel">estimated_wear</span><input type="range" min="0" max="1" step="0.01" value="0.52" id="zn-v"><span class="val" id="zn-vv"></span></div></div><div class="eq" id="zn-out" aria-live="polite"></div>'),
    'limit': '0.40·0.70은 교안이 정한 수업용 경계입니다. 실제 경계는 고장 이력과 비용으로 정합니다.',
    'quiz': [{'q': 'estimated_wear 0.55는?', 'o': ['정상 부근', '주의 부근', '위험 부근'], 'a': 1, 'why': '0.40~0.70 사이는 주의 부근입니다.'}]},
 
@@ -248,7 +248,7 @@ CH = {
    'after': [('moa', 'e01', '재현율 0%라니…'), ('x1', 'e04', '(헉)'), ('x2', 'e16', '(짝짝)')],
  },
  'summary': {
-   'head': ['칸', '한 줄', '다음 주로'],
+   'head': ['절', '한 줄', '다음 주로'],
    'rows': [['4.1~4.3', '라벨은 분류, 숫자는 회귀. 회귀 숫자는 임계선에서 다시 판단으로', '5주 점수형 분기'],
             ['4.4~4.5', '결정 경계와 네 가지 결과, 정확도 97.6%여도 재현율 77%', '5주 유형형 분기'],
             ['4.6', '잔차 제곱합을 줄이는 선, 잔차 패턴은 직선의 한계 신호', '5주 MAE·RMSE'],
@@ -282,7 +282,7 @@ W['w4-res']=function(b){var a=b.querySelector('#rs-a'),s=b.querySelector('#rs-sv
 W['w4-ai4i']=function(b){var C=['UID','tool_wear_min','torque_nm','rotational_speed_rpm','process_temp_k','machine_failure','twf','hdf','pwf','osf','rnf'];var rows=[];AI4I.UID.forEach(function(u,i){if(AI4I.machine_failure[i]||AI4I.twf[i]+AI4I.hdf[i]+AI4I.pwf[i]+AI4I.osf[i]+AI4I.rnf[i])rows.push(i)});b.querySelector('#ai-tb').innerHTML='<table class="tb"><tr>'+C.map(function(c){return '<th>'+c+'</th>'}).join('')+'</tr>'+rows.map(function(i){var flag=AI4I.twf[i]+AI4I.hdf[i]+AI4I.pwf[i]+AI4I.osf[i]+AI4I.rnf[i];var odd=flag>1||(!AI4I.machine_failure[i]&&flag);return '<tr'+(odd?' style="background:rgba(241,182,70,.12)"':'')+'>'+C.map(function(c){return '<td class="n">'+AI4I[c][i]+'</td>'}).join('')+'</tr>'}).join('')+'</table>';b.querySelector('#ai-out').innerHTML='노란 행: 원인 표시가 두 개(A0094 twf·hdf)이거나, 원인은 있는데 고장은 0(A0096 rnf). 무작위 고장(rnf)은 원본 AI4I에서도 고장으로 이어지지 않는 경우가 있습니다.';};
 W['w4-cls']=function(b){var s=b.querySelector('#cl-s'),p=b.querySelector('#cl-p'),o=b.querySelector('#cl-out');AI4I.UID.forEach(function(u,i){var op=document.createElement('option');op.value=i;op.textContent=u+(AI4I.machine_failure[i]?' (고장)':'');s.appendChild(op);});s.value=91;function f(){var i=+s.value;var t='[대상 입력]\nair '+AI4I.air_temp_k[i]+'\nprocess '+AI4I.process_temp_k[i]+'\nrotation '+AI4I.rotational_speed_rpm[i]+'\ntorque '+AI4I.torque_nm[i]+'\nwear '+AI4I.tool_wear_min[i];p.textContent=t;p.setAttribute('data-raw',t);var c=document.createElement('button');c.className='bt copy';c.type='button';c.textContent='복사';c.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(t);c.textContent='복사됨';};p.appendChild(c);var m=['twf','hdf','pwf','osf','rnf'].filter(function(k){return AI4I[k][i]});o.innerHTML='이 행의 실제 정답: machine_failure <b>'+AI4I.machine_failure[i]+'</b>, 원인 '+(m.length?'<b>'+m.join('·')+'</b>':'null')+' · QWEN 답과 대조해 보세요(검수).';}s.onchange=f;f();};
 W['w4-zone']=function(b){var v=b.querySelector('#zn-v'),o=b.querySelector('#zn-out');function f(){var x=+v.value;b.querySelector('#zn-vv').textContent=x.toFixed(2);var z=x<.4?['정상 부근','var(--gfp)','다음 점검 주기까지 정상 가동']:x<.7?['주의 부근','var(--amber)','점검 주기 절반으로 단축, 교체 일정 한 단계 앞당김']:['위험 부근','var(--eye)','즉시 교체 또는 가동 중단 — 1시간 내 결정'];o.innerHTML='<b style="color:'+z[1]+'">'+z[0]+'</b> → 5주차 작업지시서 행동: '+z[2];}v.oninput=f;f();};
-W['w4-dist']=function(b){var V=[['w','폭(mm)',296,306],['r','거칠기(μm)',1.5,8],['u','초음파(dB)',10,40],['o','오븐 온도(℃)',176,184]],bt=b.querySelector('#ds-bt'),s=b.querySelector('#ds-svg'),o=b.querySelector('#ds-out');V.forEach(function(v,j){var x=document.createElement('button');x.className='bt';x.textContent=v[1];x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});var nb=20,h0=new Array(nb).fill(0),h1=new Array(nb).fill(0),L=[];for(var k=0;k<nb;k++)L.push((v[2]+(v[3]-v[2])*(k+.5)/nb).toFixed(1));D4[v[0]].forEach(function(val,i){var k=Math.max(0,Math.min(nb-1,Math.floor((val-v[2])/(v[3]-v[2])*nb)));(D4.y[i]?h1:h0)[k]++;});var n0=900,n1=100;Chart.bars(s,{labels:L,series:[{name:'정상(비율)',color:'#5ee39c',values:h0.map(function(c){return c/n0})},{name:'불량(비율)',color:'#f0604d',values:h1.map(function(c){return c/n1})}],min:0,h:220});var m0=0,m1=0;D4[v[0]].forEach(function(val,i){if(D4.y[i])m1+=val;else m0+=val;});o.innerHTML=v[1]+' 평균 · 정상 <b>'+(m0/n0).toFixed(2)+'</b> · 불량 <em>'+(m1/n1).toFixed(2)+'</em>'+(v[0]=='o'?' → 거의 같습니다. 판정에 쓰이지 않는 변수로 보입니다.':' → 불량 쪽 꼬리가 깁니다.');};bt.appendChild(x);});bt.firstChild.click();};
+W['w4-dist']=function(b){var V=[['w','폭(mm)',296,306],['r','거칠기(μm)',1.5,8],['u','초음파(dB)',10,40],['o','오븐 온도(℃)',176,184]],bt=b.querySelector('#ds-bt'),s=b.querySelector('#ds-svg'),o=b.querySelector('#ds-out');V.forEach(function(v,j){var x=document.createElement('button');x.className='bt';x.textContent=v[1];x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});var nb=20,h0=new Array(nb).fill(0),h1=new Array(nb).fill(0),L=[];for(var k=0;k<nb;k++)L.push((v[2]+(v[3]-v[2])*(k+.5)/nb).toFixed(1));D4[v[0]].forEach(function(val,i){var k=Math.max(0,Math.min(nb-1,Math.floor((val-v[2])/(v[3]-v[2])*nb)));(D4.y[i]?h1:h0)[k]++;});var n0=900,n1=100;Chart.bars(s,{labels:L,series:[{name:'정상(비율)',color:'#5ee39c',values:h0.map(function(c){return c/n0})},{name:'불량(비율)',color:'#f0604d',values:h1.map(function(c){return c/n1})}],min:0,h:220});var m0=0,m1=0;D4[v[0]].forEach(function(val,i){if(D4.y[i])m1+=val;else m0+=val;});o.innerHTML=v[1]+' 평균 · 정상 <b>'+(m0/n0).toFixed(2)+'</b> · 불량 <em>'+(m1/n1).toFixed(2)+'</em>'+(v[0]=='o'?' → 거의 같습니다. 판정에 쓰이지 않는 변수로 보입니다.':' → 불량 쪽 분포가 길게 퍼져 있습니다.');};bt.appendChild(x);});bt.firstChild.click();};
 W['w4-strat']=function(b){b.querySelector('#sf-run').onclick=function(){var r=rng(Date.now()%100000),res=[];for(var t=0;t<20;t++){var idx=D4.y.map(function(_,i){return i});for(var i=idx.length-1;i>0;i--){var j=Math.floor(r()*(i+1));var tmp=idx[i];idx[i]=idx[j];idx[j]=tmp;}var te=idx.slice(0,200),n=te.filter(function(i){return D4.y[i]}).length;res.push(n/200*100);}Chart.bars(b.querySelector('#sf-svg'),{labels:res.map(function(_,i){return i+1}),series:[{name:'테스트 불량 비율(%)',color:'#82b8ff',values:res}],ref:10,min:0,max:16,h:200});b.querySelector('#sf-out').innerHTML='무작위 분할 20번: 최소 <b>'+Math.min.apply(null,res).toFixed(1)+'%</b> ~ 최대 <b>'+Math.max.apply(null,res).toFixed(1)+'%</b> · 층화하면 늘 <em>10.0%</em>(노란 점선)입니다.';};};
 W['w4-check']=function(b){var C=['입력 다섯 개를 모두 적었다','출력 형식(JSON)을 정했다','confidence를 받는다','rationale을 받는다','혼동행렬·재현율을 함께 본다'],on=C.map(function(){return 0}),bt=b.querySelector('#ck4-bt'),o=b.querySelector('#ck4-out');C.forEach(function(c,i){var x=document.createElement('button');x.className='bt';x.setAttribute('aria-pressed','false');x.textContent=(i+1)+'. '+c;x.onclick=function(){on[i]=1-on[i];x.setAttribute('aria-pressed',on[i]?'true':'false');f();};bt.appendChild(x);});function f(){var n=on.reduce(function(a,c){return a+c},0);o.innerHTML='점검 <b>'+n+'/5</b> '+(n==5?'— 5주차 앱으로 넘길 준비 완료':'— 남은 것: <i>'+C.filter(function(_,i){return !on[i]}).join(', ')+'</i>');}f();};
 W['w4-duel']=function(b){b.querySelector('#du4-run').onclick=function(){var a=cm(function(){return false}),c=cm(function(i){return D4.w[i]>302.5||D4.r[i]>4.9||D4.u[i]>27.5});function row(n,t){return '<tr><td>'+n+'</td><td class="n">'+t.TP+'</td><td class="n">'+t.FN+'</td><td class="n">'+t.FP+'</td><td class="n">'+t.TN+'</td><td class="n">'+((t.TP+t.TN)/10).toFixed(1)+'%</td><td class="n">'+(t.TP/(t.TP+t.FN)*100).toFixed(0)+'%</td></tr>';}b.querySelector('#du4-tb').innerHTML='<table class="tb"><tr><th>모델</th><th>TP</th><th>FN</th><th>FP</th><th>TN</th><th>정확도</th><th>재현율</th></tr>'+row('주판봇: 모두 정상',a)+row('초파리: 기준 세 개',c)+'</table>';b.querySelector('#du4-k').innerHTML='<div class="kpi r"><b>90.0%</b><span>주판봇 정확도 · 재현율 0%</span></div><div class="kpi g"><b>'+((c.TP+c.TN)/10).toFixed(1)+'%</b><span>초파리 정확도 · 재현율 '+(c.TP)+'%</span></div><div class="kpi a"><b>'+c.FN+'</b><span>초파리도 놓친 불량</span></div><div class="kpi m"><b>'+c.FP+'</b><span>초파리의 과잉 경보</span></div>';sayDoc('e10','초파리 연구원 승. 정확도 차이는 7.6%p뿐이지만, 주판봇은 불량 100개를 하나도 잡지 못했습니다(재현율 0%). 초파리 기준도 23개를 놓칩니다. 그 23개는 폭 301~302.5mm 회색 지대에 몰려 있어, 실습 리포트에서 따로 봅니다.');};};
@@ -316,7 +316,7 @@ RP = {
     ('p', '같은 조건으로 이 리포트가 직접 돌렸습니다. 8:2 층화 분할(학습 800 · 테스트 200, 불량 비율 둘 다 10.0%), 학습 데이터 5겹 층화 교차검증, 알고리즘 6개(로지스틱 회귀 · 결정나무(깊이 4) · 랜덤 포레스트 · 그래디언트 부스팅 · KNN(5) · SVM), 난수 시드 42.'),
     ('p', '판정 기준은 전체 1,000개로 깊이 3 결정나무를 키워 갈림길을 읽고, 단순한 문턱 세 개로 정리했습니다. 계산 코드는 저장소 analysis/w04_classify.py에 있습니다.'),
     ('table', {'id': 'tab-r4-1', 'cap': '<표 1> 변수별 정상·불량 평균 (단위: mm, μm, dB, ℃)', 'head': ['변수', '정상 평균 (900)', '불량 평균 (100)', '정상 최대', '읽기'],
-               'rows': [['폭 with_mm', '300.00', '301.40', '302.44', '불량이 넓다'], ['거칠기', '3.19', '4.14', '4.87', '불량 꼬리가 길다'], ['초음파 UT_dB', '19.97', '22.06', '28.38', '불량 꼬리가 길다'], ['오븐 온도', '179.98', '179.89', '182.75', '차이 없음']],
+               'rows': [['폭 with_mm', '300.00', '301.40', '302.44', '불량이 넓다'], ['거칠기', '3.19', '4.14', '4.87', '불량 쪽으로 길게 퍼짐'], ['초음파 UT_dB', '19.97', '22.06', '28.38', '불량 쪽으로 길게 퍼짐'], ['오븐 온도', '179.98', '179.89', '182.75', '차이 없음']],
                'src': '출처: 불량품_판정_데이터.csv, 저자 계산'})]},
   {'id': 'sec-r4-4', 'nav': '결과', 'title': '결과', 'blocks': [
     ('html', '<h3 id="sec-r4-4-1">결과 1 · 판정 기준은 세 개</h3>'),
@@ -344,7 +344,7 @@ RP = {
     ('p', '<span class="guess">추측</span> 놓친 23개 중 일부는 판정 라벨 자체의 흔들림(같은 판재를 다시 재면 정상으로 나올 가능성)일 수 있습니다. 재측정 데이터가 있으면 확인할 수 있습니다.')]},
   {'id': 'sec-r4-6', 'nav': '의의와 한계', 'title': '의의와 한계', 'blocks': [
     ('p', '의의: 프롬프트 카드의 "판정"을 데이터에서 꺼낸 "기준표"로 바꿨습니다. 기준표는 작업자가 따를 수 있고, 고객에게 설명할 수 있고, 틀리면 고칠 수 있습니다.'),
-    ('p', '한계: ① 가상 데이터 1,000개 ② 테스트 불량 20개라 재현율 한 칸이 5%p씩 움직임 ③ 원자료의 m1·m2 추가 데이터(판정샘플 40, 불량 18·50·100 학습 데이터)는 파일이 없어 다루지 못함 ④ 오븐 온도가 무관하다는 것은 180℃ 안팎의 좁은 범위 안에서의 결과입니다.'),
+    ('p', '한계: ① 가상 데이터 1,000개 ② 테스트 불량 20개라 불량 1개가 재현율을 5%p씩 움직임 ③ 원자료의 m1·m2 추가 데이터(판정샘플 40, 불량 18·50·100 학습 데이터)는 파일이 없어 다루지 못함 ④ 오븐 온도가 무관하다는 것은 180℃ 안팎의 좁은 범위 안에서의 결과입니다.'),
     ('memo', 'e08', '다음 주에는 이 기준표가 작업지시서의 "분기"가 됩니다. 숫자 한 줄이 행동 한 줄로 바뀌는 걸 보게 될 거예요.')]},
  ],
  'refs': ['안상선, 「코딩 없는 제조업의 AI 데이터 분석」 1회차·2회차 강의 교안, 2026', '안상선, 불량품 판정 분류 모델 Colab 프롬프트(수업 자료), 2026', 'Matzka, S. (2020). AI4I 2020 Predictive Maintenance Dataset. UCI Machine Learning Repository', '이 저장소 analysis/w04_classify.py — 저자 계산(scikit-learn)'],

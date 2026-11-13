@@ -58,17 +58,17 @@ CH = {
          ('3.3 본문', '회의록·매뉴얼·점검표를 한 장으로, 빈칸 다섯 점검'), ('3.4 앱', '입력 폼 → 결과 카드 → 인쇄, 페이지 이동 없음')],
  'glossary': {
    '작업지시서': ['작업지시서', '문서', '결과 한 줄 + 행동 한 줄 + 책임 한 줄을 한 장에 담은 카드입니다.'],
-   '분기': ['분기', '규칙', '결과에 따라 행동이 갈라지는 자리입니다. 기준이 명확해야 누구나 같은 행동을 합니다.'],
-   '점수 분기': ['점수 분기', '규칙', '회귀 숫자(0~1)를 임계값 두 개로 정상·주의·위험 세 자리로 가르는 것입니다.'],
+   '분기': ['분기', '규칙', '결과에 따라 행동이 갈라지는 지점입니다. 기준이 명확해야 누구나 같은 행동을 합니다.'],
+   '점수 분기': ['점수 분기', '규칙', '회귀 숫자(0~1)를 임계값 두 개로 정상·주의·위험 세 구간으로 가르는 것입니다.'],
    '유형 분기': ['유형 분기', '규칙', '분류 라벨(고장 유형)에 따라 행동을 가르는 것입니다.'],
    '보수형': ['보수형 분기', '규칙', '놓침 비용이 큰 곳에서 임계값을 낮춰(0.40 → 0.30) 더 일찍 행동하게 하는 것입니다.'],
  },
  'subs': [
-  {'id': 'sec-5-1', 'title': '점검표가 비어 있는 세 자리', 'tags': ['일상: 진단서만 받은 환자', '현장: wear 0.78'],
+  {'id': 'sec-5-1', 'title': '점검표에서 비어 있는 세 항목', 'tags': ['일상: 진단서만 받은 환자', '현장: wear 0.78'],
    'pair': ('일상으로 치면', '병원에서 "혈압 165"라고만 적힌 종이를 받았다. 약을 먹어야 하나, 다시 와야 하나, 누구에게 물어야 하나 적혀 있지 않다.',
             '공장에서는', '점검표에 "wear_proxy 0.78"만 있다. 교체할지, 누가 할지, 언제까지인지 비어 있다. 결과만 있고 행동·책임·한 장이 없다.'),
-   'body': ['분류·회귀 모델이 좋은 숫자를 돌려줘도, 그다음 행동이 빈칸이면 작업자는 멈춥니다. 현장에서 흔들리는 것은 항상 이 자리입니다.'],
-   'talk': [('asst', 'e09', '그럼 숫자 옆에 "교체하세요"만 붙이면 되나요?'), ('fly', 'e09', '누가? 언제까지? 교체 말고 다른 고장이면?'), ('sia', 'e07', '세 자리를 하나씩 채워 보겠습니다.')],
+   'body': ['분류·회귀 모델이 좋은 숫자를 돌려줘도, 그다음 행동이 빈칸이면 작업자는 멈춥니다. 현장에서 흔들리는 것은 늘 이 부분입니다.'],
+   'talk': [('asst', 'e09', '그럼 숫자 옆에 "교체하세요"만 붙이면 되나요?'), ('fly', 'e09', '누가? 언제까지? 교체 말고 다른 고장이면?'), ('sia', 'e07', '세 항목을 하나씩 채워 보겠습니다.')],
    'widget': ('w5-blank', '<div class="ptitle">비교 · 점검표 한 줄 vs 작업지시서 한 장</div><div class="ctrl"><button class="bt on" data-m="0" type="button">점검표</button><button class="bt" data-m="1" type="button">작업지시서</button></div><div id="bl-out"></div>'),
    'limit': '모든 결과가 작업지시서가 필요한 것은 아닙니다. 일상 점검처럼 한 가지 작업이면 책임과 시한만 적은 단순 카드로 충분합니다(5.2).',
    'quiz': [{'q': '점검표의 세 한계가 아닌 것은?', 'o': ['행동이 없다', '책임이 흐리다', '숫자가 틀리다'], 'a': 2, 'why': '숫자가 맞아도 행동·책임·한 장이 비면 작업자가 멈춥니다.'}]},
@@ -87,17 +87,17 @@ CH = {
    'limit': '회의록·매뉴얼이 없는 공장도 많습니다. 그럴 때는 숙련자 인터뷰가 먼저입니다(14주차, 빈 슬롯).',
    'quiz': [{'q': '"평균 15분, ① 안전 점검 ② 전원 차단…"은 어느 문서에서 오나?', 'o': ['점검표', '회의록', '매뉴얼'], 'a': 2, 'why': '작업 절차는 매뉴얼의 몫입니다.'}]},
 
-  {'id': 'sec-5-3', 'title': '같은 숫자, 다른 자리, 다른 행동 — 분기형', 'tags': ['원리: 분기', '자리 → 행동'],
-   'pair': ('일상으로 치면', '체온 37.2도는 "지켜보기", 38.5도는 "해열제", 40도는 "응급실". 숫자를 외울 필요 없이 자리만 보면 행동이 적혀 있다.',
-            '작업지시서에서는', '점검 결과(0.0~1.0)가 ≤0.40이면 정상, 0.40~0.70이면 주의, ≥0.70이면 위험. 작업자는 0.78인지 0.52인지 기억할 필요 없이 자리만 본다.'),
+  {'id': 'sec-5-3', 'title': '같은 숫자, 다른 구간, 다른 행동 — 분기형', 'tags': ['원리: 분기', '구간 → 행동'],
+   'pair': ('일상으로 치면', '체온 37.2도는 "지켜보기", 38.5도는 "해열제", 40도는 "응급실". 숫자를 외울 필요 없이 구간만 보면 행동이 적혀 있다.',
+            '작업지시서에서는', '점검 결과(0.0~1.0)가 ≤0.40이면 정상, 0.40~0.70이면 주의, ≥0.70이면 위험. 작업자는 0.78인지 0.52인지 기억할 필요 없이 구간만 본다.'),
    'body': ['분기가 없는 작업지시서는 한 장의 줄글이 됩니다. 분기는 그 글 안에 갈래를 만듭니다. 기준이 명확해야 작업자도 같은 행동을 합니다.'],
-   'talk': [('asst', 'e07', '그래서 자리 이름(정상·주의·위험)이 숫자보다 먼저 보이게 카드를 만드는 거군요.'), ('fly', 'e10', '맞아. 숫자는 근거로, 자리는 행동으로.')],
-   'widget': ('w5-score', '<div class="ptitle">실험 · 점수 하나 → 자리 → 카드</div><div class="ctrl"><div class="group"><span class="glabel">wear_proxy</span><input type="range" min="0" max="1" step="0.01" value="0.78" id="sc-v"><span class="val" id="sc-vv"></span></div></div><div id="sc-out"></div>'),
+   'talk': [('asst', 'e07', '그래서 구간 이름(정상·주의·위험)이 숫자보다 먼저 보이게 카드를 만드는 거군요.'), ('fly', 'e10', '맞아. 숫자는 근거로, 구간은 행동으로.')],
+   'widget': ('w5-score', '<div class="ptitle">실험 · 점수 하나 → 구간 → 카드</div><div class="ctrl"><div class="group"><span class="glabel">wear_proxy</span><input type="range" min="0" max="1" step="0.01" value="0.78" id="sc-v"><span class="val" id="sc-vv"></span></div></div><div id="sc-out"></div>'),
    'limit': '0.40·0.70은 수업용 경계입니다. 실제 경계는 고장 이력, 교체 비용, 놓침 비용으로 정합니다.',
-   'quiz': [{'q': '분기형 작업지시서에서 작업자가 먼저 보는 것은?', 'o': ['숫자 0.78', '자리 이름(위험)과 그 행동'], 'a': 1, 'why': '자리만 보면 행동이 적혀 있게 만드는 것이 분기형입니다.'}]},
+   'quiz': [{'q': '분기형 작업지시서에서 작업자가 먼저 보는 것은?', 'o': ['숫자 0.78', '구간 이름(위험)과 그 행동'], 'a': 1, 'why': '구간만 보면 행동이 적혀 있게 만드는 것이 분기형입니다.'}]},
 
   {'id': 'sec-5-4', 'title': '점수 분기 — 임계값 두 개로 셋', 'tags': ['회귀 결과용', '0.21 · 0.52 · 0.78 · 0.95'],
-   'body': ['<div class="tw"><table class="tb"><tr><th>점수</th><th>자리</th><th>행동</th><th>작업자</th><th>시한</th></tr>'
+   'body': ['<div class="tw"><table class="tb"><tr><th>점수</th><th>구간</th><th>행동</th><th>작업자</th><th>시한</th></tr>'
             '<tr><td>0.21</td><td>정상</td><td>가동 유지, 다음 점검 주기 등록</td><td>점검자 박씨</td><td>당일 17:00</td></tr>'
             '<tr><td>0.52</td><td>주의</td><td>점검 주기 절반 단축, 교체 일정 한 단계 앞당김</td><td>라인 책임자 이씨</td><td>4시간 내</td></tr>'
             '<tr><td>0.78</td><td>위험</td><td>즉시 교체 또는 가동 중단</td><td>팀장 최씨 + 안전요원</td><td>1시간 내</td></tr>'
@@ -106,7 +106,7 @@ CH = {
    'talk': [('robo', 'e19', '0.69는 주의, 0.70은 위험! 깔끔합니다!'), ('fly', 'e09', '0.69와 0.70이 정말 그렇게 다를까? 경계 근처는 어떻게 할 건데?'), ('doc', 'e10', '그 질문이 5.6 보수형 분기로 이어집니다.')],
    'widget': ('w5-day', '<div class="ptitle">시나리오 · 더미 공장 A라인의 하루 (교안)</div><div class="ctrl" id="dy-bt"></div><div id="dy-out"></div>'),
    'limit': '하루 시나리오의 시각·점수는 교안의 예시입니다.',
-   'quiz': [{'q': 'wear 0.52의 시한은?', 'o': ['1시간 내', '4시간 내', '당일 17:00'], 'a': 1, 'why': '주의 자리는 4시간 내 점검 주기 단축입니다.'}]},
+   'quiz': [{'q': 'wear 0.52의 시한은?', 'o': ['1시간 내', '4시간 내', '당일 17:00'], 'a': 1, 'why': '주의 구간은 4시간 내 점검 주기 단축입니다.'}]},
 
   {'id': 'sec-5-5', 'title': '유형 분기 — 고장 유형마다 다른 점검', 'tags': ['분류 결과용', '여섯 갈래'],
    'body': ['같은 machine_failure = 1이라도 twf(공구 마모)와 hdf(열 방산)는 다른 점검으로 이어집니다. 유형 분기는 분류 라벨의 이름이 갈래입니다.',
@@ -124,7 +124,7 @@ CH = {
    'quiz': [{'q': 'pwf 카드의 행동은?', 'o': ['공구 교체', '전원 점검·UPS·전기팀 호출', '냉각'], 'a': 1, 'why': '전력 고장은 전원부터 봅니다.'}]},
 
   {'id': 'sec-5-6', 'title': '분기 기준 네 가지 — 점수형 · 유형형 · 혼합형 · 보수형', 'tags': ['설계: 분기 기준', 'AI4I 미니 100행'],
-   'body': ['① 점수형 — 숫자 구간이 갈래(회귀 결과). ② 유형형 — 라벨 이름이 갈래(분류 결과). ③ 혼합형 — 점수로 자리를 가른 뒤 유형으로 행동을 가른다. ④ 보수형 — 놓침 비용이 큰 곳에서 경계를 낮춘다(0.40 → 0.30).',
+   'body': ['① 점수형 — 숫자 구간이 갈래(회귀 결과). ② 유형형 — 라벨 이름이 갈래(분류 결과). ③ 혼합형 — 점수로 구간을 가른 뒤 유형으로 행동을 가른다. ④ 보수형 — 놓침 비용이 큰 곳에서 경계를 낮춘다(0.40 → 0.30).',
             'AI4I 미니 100행에 점수형만 쓰면 위험 카드 13장 중 실제 고장은 2장뿐이고, 고장 6건 중 4건은 정상·주의 카드로 나갑니다. 특히 과부하 고장 A0095는 마모 0.30이라 정상 카드를 받습니다.'],
    'talk': [('robo', 'e24', '과부하로 멈춘 설비에 "정상 가동" 카드가 나갔다고요?'), ('fly', 'e10', '마모 숫자 하나로 모든 고장을 보려 해서 그래. 혼합형이 필요해.'), ('sia', 'e10', '아래에서 네 기준을 바꿔 가며 카드 분포를 보겠습니다.')],
    'widget': ('w5-mix', '<div class="ptitle">실험 · AI4I 미니 100행에 분기 기준 적용 (실제 수업 데이터)</div><div class="ctrl" id="mx-bt"></div><div class="kpis" id="mx-k"></div><div class="eq" id="mx-out" aria-live="polite"></div>'),
@@ -132,12 +132,12 @@ CH = {
    'quiz': [{'q': '마모는 낮은데 과부하 고장이 난 설비를 잡는 기준은?', 'o': ['점수형', '유형형·혼합형'], 'a': 1, 'why': '고장 유형이 행동을 정해야 합니다.'}]},
 
   {'id': 'sec-5-7', 'title': '행동 매핑 — 누가 · 무엇을 · 언제까지', 'tags': ['구성: 책임의 위치', '현장: 박씨·이씨·최씨'],
-   'body': ['분기가 자리를 알려 준다면, 행동 매핑은 그 자리에 누가·무엇을·언제까지를 붙입니다. 정상은 점검자 박씨가 당일 17:00까지, 주의는 라인 책임자 이씨가 4시간 내, 위험은 팀장 최씨와 안전요원이 1시간 내입니다.',
-            '자리가 위로 갈수록 책임자 직급이 오르고 시한이 짧아집니다. 위험 자리에는 보고 회선(품질팀·생산팀)이 꼭 붙습니다.'],
+   'body': ['분기가 구간을 알려 준다면, 행동 매핑은 그 구간에 누가·무엇을·언제까지를 붙입니다. 정상은 점검자 박씨가 당일 17:00까지, 주의는 라인 책임자 이씨가 4시간 내, 위험은 팀장 최씨와 안전요원이 1시간 내입니다.',
+            '구간이 위로 갈수록 책임자 직급이 오르고 시한이 짧아집니다. 위험 구간에는 보고 회선(품질팀·생산팀)이 꼭 붙습니다.'],
    'talk': [('moa', 'e12', '이름을 다 적으니 누구한테 전화할지 바로 보여요.'), ('asst', 'e07', '아래에서 우리 공장 이름으로 바꿔 볼게요.')],
    'widget': ('w5-map', '<div class="ptitle">편집 · 우리 공장 행동 매핑표</div><div class="tw" id="mp-tb"></div><div class="eq" id="mp-out" aria-live="polite"></div>'),
    'limit': '편집한 내용은 저장되지 않습니다. 인쇄하거나 복사해 두세요.',
-   'quiz': [{'q': '위험 자리에 반드시 붙어야 하는 것은?', 'o': ['장식 그림', '보고 회선(품질팀·생산팀)', '긴 설명'], 'a': 1, 'why': '보고 회선이 없으면 위험한 자리에서 책임이 사라집니다.'}]},
+   'quiz': [{'q': '위험 구간에 반드시 붙어야 하는 것은?', 'o': ['장식 그림', '보고 회선(품질팀·생산팀)', '긴 설명'], 'a': 1, 'why': '보고 회선이 없으면 위험 구간에서 책임이 사라집니다.'}]},
 
   {'id': 'sec-5-8', 'title': '자주 빠지는 빈칸 다섯 가지', 'tags': ['점검: 다섯 빈칸', '방법: 자가 점검'],
    'body': ['① 책임자 이름이 구체적이지 않다 — 성 하나·직함 하나라도 적습니다. ② 임계값이 숫자로 적혀 있지 않다 — 0.40과 0.70, 두 숫자가 있어야 구간이 정의됩니다.',
@@ -174,7 +174,7 @@ CH = {
           'rows': [('MAE', '평균적으로 얼마나 빗나가나'), ('RMSE', '큰 오차에 더 무겁게 벌점'), ('차이가 크다', '몇 개가 크게 빗나갔다는 신호')],
           'calc': '회귀 카드의 few-shot 예시는 wear 80분 → 0.21, 220분 → 0.78입니다. 데이터의 마모 정의(가동 시간 ÷ 약 253)로는 0.32, 0.87입니다. 두 점의 MAE는 0.10, RMSE도 약 0.10입니다.',
           'comment': '예시가 0.1쯤 낮으니까, 앱이 마모를 늘 낮게 볼 수도 있겠네요!'},
-   'body': ['교안 자료의 회귀 앱 결과표에는 MAE·RMSE 칸이 비어 있습니다. 여러분이 QWEN 답을 실제 값과 비교해 채울 자리입니다.',
+   'body': ['교안 자료의 회귀 앱 결과표에는 MAE·RMSE 칸이 비어 있습니다. 여러분이 QWEN 답을 실제 값과 비교해 채울 곳입니다.',
             '이 페이지가 찾은 점은, few-shot 예시값이 데이터의 마모 정의보다 약 0.1 낮다는 것입니다. 예시를 따라 답하면 위험 경계 0.70에 닿는 시점이 실제보다 늦어질 수 있습니다(실습 리포트).'],
    'talk': [('fly', 'e10', '예시를 데이터에서 직접 뽑아 넣으면 이 문제가 줄어.'), ('asst', 'e07', '아래 표에 QWEN 답을 넣고 MAE·RMSE를 바로 계산해 볼게요.')],
    'widget': ('w5-mae', '<div class="ptitle">계산기 · QWEN 회귀 답 채점 (AI4I 미니 5행)</div><div class="tw" id="ma-tb"></div><div class="eq" id="ma-out" aria-live="polite"></div>'),
@@ -182,10 +182,10 @@ CH = {
    'quiz': [{'q': 'MAE 0.05, RMSE 0.15라면?', 'o': ['고르게 조금씩 빗나감', '몇 개가 크게 빗나감'], 'a': 1, 'why': 'RMSE가 MAE보다 훨씬 크면 큰 오차가 섞여 있다는 뜻입니다.'}]},
 
   {'id': 'sec-5-12', 'title': '자주 묻는 다섯 가지와 정리', 'tags': ['FAQ', '다음: REVIEW'],
-   'body': ['Q1 같은 입력에 답이 달라요 → few-shot 예시를 정상·임계 두 자리로 고정하고 다시 받습니다. Q2 추정값이 0~1 밖이에요 → "0.0~1.0 사이, 그 외는 무효"를 출력 형식에 적습니다.',
+   'body': ['Q1 같은 입력에 답이 달라요 → few-shot 예시를 정상·임계 두 구간으로 고정하고 다시 받습니다. Q2 추정값이 0~1 밖이에요 → "0.0~1.0 사이, 그 외는 무효"를 출력 형식에 적습니다.',
             'Q3 카드에 완료 시각이 없어요 → 시한이 없으면 작업지시서가 아닙니다. 다시 씁니다. Q4 분류·회귀 답이 둘 다 마음에 안 들어요 → 보수형 분기로 임계값을 낮추고 자가 점검합니다.',
             'Q5 작업자가 카드를 거부해요 → 카드 다섯 칸을 다시 묻습니다. 빈칸이 있으면 이유가 있습니다.'],
-   'talk': [('doc', 'e16', '카드 한 장이 작업자 손에 닿으면 그 자리가 작업지시서입니다. 다음 주는 1~5주를 다시 보는 REVIEW입니다.'), ('sia', 'e07', '6주에는 면류 공장으로 다섯 주를 한 번에 엮겠습니다.')],
+   'talk': [('doc', 'e16', '카드 한 장이 작업자 손에 닿으면 그것이 작업지시서입니다. 다음 주는 1~5주를 다시 보는 REVIEW입니다.'), ('sia', 'e07', '6주에는 면류 공장으로 다섯 주를 한 번에 엮겠습니다.')],
    'widget': ('w5-faq', '<div class="ptitle">퀴즈 · 이 상황엔 몇 번 답?</div><div class="eq" id="fq-q"></div><div class="ctrl"><button class="bt" data-a="1" type="button">Q1</button><button class="bt" data-a="2" type="button">Q2</button><button class="bt" data-a="3" type="button">Q3</button><button class="bt" data-a="4" type="button">Q4</button><button class="bt" data-a="5" type="button">Q5</button></div><div class="eq" id="fq-out" aria-live="polite"></div>'),
    'limit': 'FAQ의 답은 출발점입니다. 반복되는 문제는 회의록에 남겨 분기 규칙 자체를 고칩니다.',
    'quiz': [{'q': 'QWEN이 estimated_wear 1.3을 돌려줬다. 고칠 카드는?', 'o': ['역할 카드', '출력 형식 카드', '인쇄 설정'], 'a': 1, 'why': '범위를 출력 형식에 명시합니다(Q2).'}]},
@@ -201,7 +201,7 @@ CH = {
    'after': [('moa', 'e12', '정장 입고 응원합니다!'), ('x2', 'e01', '(짝짝)'), ('x3', 'e16', '(삐빅)')],
  },
  'summary': {
-   'head': ['칸', '한 줄', '쓰는 곳'],
+   'head': ['절', '한 줄', '쓰는 곳'],
    'rows': [['5.1~5.2', '점검표 + 회의록 + 매뉴얼 = 작업지시서 다섯 칸', '단순 카드 / 분기 카드'],
             ['5.3~5.6', '점수형(0.40/0.70) · 유형형(6갈래) · 혼합형 · 보수형', '고장 6건 중 4건은 점수형만으로 놓침'],
             ['5.7~5.8', '누가·무엇을·언제까지 + 빈칸 다섯', '카드 검사기'],
@@ -234,8 +234,8 @@ W['w5-merge']=function(b){var S=[['점검표','① 결과 라인','wear_proxy 0.
 W['w5-score']=function(b){var v=b.querySelector('#sc-v'),o=b.querySelector('#sc-out');function f(){var x=+v.value;b.querySelector('#sc-vv').textContent=x.toFixed(2);o.innerHTML=card(mk('CNC-1',x,''));}v.oninput=f;f();};
 W['w5-day']=function(b){var D=[['09:00','아침 점검',.18,''],['11:30','마모 상승',.52,''],['13:15','위험 도달 + hdf',.78,'hdf'],['15:00','교체 후 복귀',.09,'']],bt=b.querySelector('#dy-bt'),o=b.querySelector('#dy-out');D.forEach(function(d,i){var x=document.createElement('button');x.className='bt';x.textContent=d[0]+' '+d[1];x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});var c=mk('A라인 '+d[0],d[2],d[3]);o.innerHTML=card(c);};bt.appendChild(x);});bt.firstChild.click();};
 W['w5-type']=function(b){var T=['정상','twf','hdf','pwf','osf','rnf'],bt=b.querySelector('#ty-bt'),o=b.querySelector('#ty-out');T.forEach(function(t){var x=document.createElement('button');x.className='bt';x.textContent=t;x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});o.innerHTML=card(mk('CNC-2',.43,t));};bt.appendChild(x);});bt.children[2].click();};
-W['w5-mix']=function(b){var M=[['점수형 (0.40/0.70)',0],['유형형',1],['혼합형',2],['보수형 (0.30/0.60) + 혼합',3]],bt=b.querySelector('#mx-bt'),k=b.querySelector('#mx-k'),o=b.querySelector('#mx-out');function typ(i){var t=['twf','hdf','pwf','osf','rnf'].filter(function(c){return AI4I[c][i]});return AI4I.machine_failure[i]&&t.length?t[0]:'';}M.forEach(function(m){var x=document.createElement('button');x.className='bt';x.textContent=m[0];x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});var cnt={정상:0,주의:0,위험:0},miss=[],dang=0,dangFail=0;AI4I.UID.forEach(function(u,i){var w=AI4I.wear_proxy[i],t=typ(i),z;if(m[1]==0)z=zone(w)=='이미 늦음'?'위험':zone(w);else if(m[1]==1)z=t?'위험':'정상';else if(m[1]==2)z=t?'위험':(zone(w)=='이미 늦음'?'위험':zone(w));else z=t?'위험':(w>=.6?'위험':w>=.3?'주의':'정상');cnt[z]++;if(z=='위험'){dang++;if(AI4I.machine_failure[i])dangFail++;}if(AI4I.machine_failure[i]&&z!=='위험')miss.push(u+'('+z+')');});k.innerHTML='<div class="kpi g"><b>'+cnt.정상+'</b><span>정상 카드</span></div><div class="kpi a"><b>'+cnt.주의+'</b><span>주의 카드</span></div><div class="kpi r"><b>'+cnt.위험+'</b><span>위험 카드 (그중 실제 고장 '+dangFail+')</span></div><div class="kpi m"><b>'+miss.length+'/6</b><span>위험 카드를 못 받은 고장</span></div>';o.innerHTML=miss.length?'위험 카드를 못 받은 고장: <em>'+miss.join(', ')+'</em>':'고장 6건 모두 위험 카드를 받았습니다.'+(m[1]==1?' 다만 유형형만 쓰면 마모가 높은 설비(주의 자리)가 모두 정상 카드를 받습니다.':'');};bt.appendChild(x);});bt.firstChild.click();};
-W['w5-map']=function(b){var R=[['정상','점검자 박씨','당일 17:00'],['주의','라인 책임자 이씨','4시간 내'],['위험','팀장 최씨 + 안전요원 김씨','1시간 내']],tb=b.querySelector('#mp-tb'),o=b.querySelector('#mp-out');tb.innerHTML='<table class="tb"><tr><th>자리</th><th>작업자 (고쳐 쓰세요)</th><th>시한</th></tr>'+R.map(function(r,i){return '<tr><td>'+r[0]+'</td><td><input data-i="'+i+'" value="'+r[1]+'" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:6px;padding:4px"></td><td><input data-j="'+i+'" value="'+r[2]+'" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:6px;padding:4px"></td></tr>'}).join('')+'</table>';function f(){var bad=[];tb.querySelectorAll('input').forEach(function(x){var v=x.value.trim();if(!v||/관련|담당 부서|ASAP|곧|검토 후/.test(v))bad.push(v||'(빈칸)');x.style.borderColor=(!v||/관련|ASAP|곧|검토 후/.test(v))?'var(--eye)':'var(--rule)';});o.innerHTML=bad.length?'<em>모호한 칸: '+bad.join(', ')+'</em>':'모든 칸에 구체적인 이름과 시간이 있습니다.';}tb.querySelectorAll('input').forEach(function(x){x.oninput=f});f();};
+W['w5-mix']=function(b){var M=[['점수형 (0.40/0.70)',0],['유형형',1],['혼합형',2],['보수형 (0.30/0.60) + 혼합',3]],bt=b.querySelector('#mx-bt'),k=b.querySelector('#mx-k'),o=b.querySelector('#mx-out');function typ(i){var t=['twf','hdf','pwf','osf','rnf'].filter(function(c){return AI4I[c][i]});return AI4I.machine_failure[i]&&t.length?t[0]:'';}M.forEach(function(m){var x=document.createElement('button');x.className='bt';x.textContent=m[0];x.onclick=function(){bt.querySelectorAll('.bt').forEach(function(y){y.classList.toggle('on',y===x)});var cnt={정상:0,주의:0,위험:0},miss=[],dang=0,dangFail=0;AI4I.UID.forEach(function(u,i){var w=AI4I.wear_proxy[i],t=typ(i),z;if(m[1]==0)z=zone(w)=='이미 늦음'?'위험':zone(w);else if(m[1]==1)z=t?'위험':'정상';else if(m[1]==2)z=t?'위험':(zone(w)=='이미 늦음'?'위험':zone(w));else z=t?'위험':(w>=.6?'위험':w>=.3?'주의':'정상');cnt[z]++;if(z=='위험'){dang++;if(AI4I.machine_failure[i])dangFail++;}if(AI4I.machine_failure[i]&&z!=='위험')miss.push(u+'('+z+')');});k.innerHTML='<div class="kpi g"><b>'+cnt.정상+'</b><span>정상 카드</span></div><div class="kpi a"><b>'+cnt.주의+'</b><span>주의 카드</span></div><div class="kpi r"><b>'+cnt.위험+'</b><span>위험 카드 (그중 실제 고장 '+dangFail+')</span></div><div class="kpi m"><b>'+miss.length+'/6</b><span>위험 카드를 못 받은 고장</span></div>';o.innerHTML=miss.length?'위험 카드를 못 받은 고장: <em>'+miss.join(', ')+'</em>':'고장 6건 모두 위험 카드를 받았습니다.'+(m[1]==1?' 다만 유형형만 쓰면 마모가 높은 설비(주의 구간)가 모두 정상 카드를 받습니다.':'');};bt.appendChild(x);});bt.firstChild.click();};
+W['w5-map']=function(b){var R=[['정상','점검자 박씨','당일 17:00'],['주의','라인 책임자 이씨','4시간 내'],['위험','팀장 최씨 + 안전요원 김씨','1시간 내']],tb=b.querySelector('#mp-tb'),o=b.querySelector('#mp-out');tb.innerHTML='<table class="tb"><tr><th>구간</th><th>작업자 (고쳐 쓰세요)</th><th>시한</th></tr>'+R.map(function(r,i){return '<tr><td>'+r[0]+'</td><td><input data-i="'+i+'" value="'+r[1]+'" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:6px;padding:4px"></td><td><input data-j="'+i+'" value="'+r[2]+'" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:6px;padding:4px"></td></tr>'}).join('')+'</table>';function f(){var bad=[];tb.querySelectorAll('input').forEach(function(x){var v=x.value.trim();if(!v||/관련|담당 부서|ASAP|곧|검토 후/.test(v))bad.push(v||'(빈칸)');x.style.borderColor=(!v||/관련|ASAP|곧|검토 후/.test(v))?'var(--eye)':'var(--rule)';});o.innerHTML=bad.length?'<em>모호한 칸: '+bad.join(', ')+'</em>':'모든 칸에 구체적인 이름과 시간이 있습니다.';}tb.querySelectorAll('input').forEach(function(x){x.oninput=f});f();};
 W['w5-lint']=function(b){var t=b.querySelector('#ln5'),o=b.querySelector('#ln5-out');function f(){var s=t.value,P=[];if(!/(씨|팀장|반장|책임자|[가-힣]{2,3}\s?(대리|과장|주임))/.test(s)||/관련 부서/.test(s))P.push('① 책임자 이름이 구체적이지 않습니다');if(!/0\.\d/.test(s))P.push('② 임계값·점수 숫자가 없습니다');if(/ASAP|곧|검토 후/.test(s)||!/(\d+\s?(시간|분)|\d{1,2}:\d{2})/.test(s))P.push('③ 완료 시한이 시간 단위가 아닙니다');if(/항목:\s*(검토|판단)\s*$/m.test(s)||!/(교체|차단|정지|점검|냉각|등록|호출)/.test(s))P.push('④ 작업 항목에 동사 + 사물이 없습니다');if(!/(보고|팀)/.test(s.split('메모')[1]||''))P.push('⑤ 보고 회선이 없습니다');o.innerHTML=P.length?P.map(function(p){return '<p class="r">'+p+'</p>'}).join(''):'<p class="g">빈칸 다섯이 모두 채워졌습니다.</p>';}b.querySelector('#ln5-bt').onclick=f;b.querySelector('#ln5-ok').onclick=function(){t.value='결과: wear_proxy 0.78 → 위험\n담당: 팀장 최씨 + 안전요원 김씨\n항목: ① 안전 점검 ② 전원 차단 ③ 공구 교체 ④ 기록 ⑤ 보고\n시한: 1시간 내\n메모: 품질팀·생산팀 즉시 보고';f();};f();};
 W['w5-app']=function(b){var F=[['air_temp_k','공기 온도(K)',295,306,300.2],['process_temp_k','공정 온도(K)',305,316,310.2],['rotational_speed_rpm','회전수(rpm)',1100,2900,1519],['torque_nm','토크(Nm)',3,80,38.8],['tool_wear_min','공구 가동(분)',0,260,238]],fm=b.querySelector('#ap-form');var st='background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:8px;padding:6px;width:110px';fm.innerHTML=F.map(function(f){return '<label class="group" style="flex-direction:column;align-items:flex-start"><span class="glabel">'+f[1]+'</span><input type="number" step="any" data-k="'+f[0]+'" min="'+f[2]+'" max="'+f[3]+'" value="'+f[4]+'" style="'+st+'"></label>'}).join('')+'<label class="group" style="flex-direction:column;align-items:flex-start"><span class="glabel">분류 결과(QWEN)</span><select id="ap-t" style="'+st+'"><option>정상</option><option selected>twf</option><option>hdf</option><option>pwf</option><option>osf</option><option>rnf</option></select></label><label class="group" style="flex-direction:column;align-items:flex-start"><span class="glabel">회귀 결과 estimated_wear</span><input type="number" id="ap-w" step="0.01" min="0" max="1" value="0.94" style="'+st+'"></label>';var c=b.querySelector('#ap-card');function run(){var ok=true;fm.querySelectorAll('input').forEach(function(x){var v=parseFloat(x.value),bad=isNaN(v)||v<+x.min||v>+x.max;x.style.borderColor=bad?'#f0604d':'var(--rule)';x.style.borderWidth=bad?'2px':'1px';if(bad)ok=false;});if(!ok){c.innerHTML='<p class="lim">빨간 칸을 고쳐 주세요. 숫자가 아니거나 범위 밖입니다.</p>';return;}var w=parseFloat(b.querySelector('#ap-w').value),t=b.querySelector('#ap-t').value;var d=new Date();c.innerHTML='<div id="wo-print">'+card(mk('CNC 셀 · '+d.getHours()+':'+String(d.getMinutes()).padStart(2,'0'),w,t))+'</div>';}b.querySelector('#ap-run').onclick=run;b.querySelector('#ap-print').onclick=function(){run();var s=document.createElement('style');s.id='ps';s.textContent='@media print{body *{visibility:hidden}#wo-print,#wo-print *{visibility:visible}#wo-print{position:absolute;left:0;top:0;width:100%}#wo-print .wo{font-size:12pt;color:#000;background:#fff}#wo-print .lv{color:#000;border:1px solid #000;background:#fff!important}}';document.head.appendChild(s);window.print();setTimeout(function(){s.remove()},500);};run();};
 W['w5-qa']=function(b){var C=['외부 주소를 부르지 않는다','숫자가 아닌 값을 막는다','0.40·0.70이 코드에 그대로 있다','카드 다섯 칸이 다 있다','인쇄가 A4 한 장에 들어간다'],on=C.map(function(){return 0}),bt=b.querySelector('#qa-bt'),o=b.querySelector('#qa-out');C.forEach(function(c,i){var x=document.createElement('button');x.className='bt';x.setAttribute('aria-pressed','false');x.textContent=(i+1)+'. '+c;x.onclick=function(){on[i]=1-on[i];x.setAttribute('aria-pressed',on[i]?'true':'false');f();};bt.appendChild(x);});function f(){var n=on.reduce(function(a,c){return a+c},0);o.innerHTML='확인 <b>'+n+'/5</b>'+(n==5?' — 현장 배포 전 마지막으로 작업자 한 명에게 보여 주세요.':'');}f();};

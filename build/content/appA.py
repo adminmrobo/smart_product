@@ -2,9 +2,9 @@
 import json
 DS = [
  {'id': 'ds-foods', 'short': '식품 공장', 'name': '빙과·호빵·군고구마 월별 판매', 'file': 'week03_seasonal_foods.csv', 'color': '#ff86b8', 'desc': '2019-01~2025-12, 84개월', 'week': '3주',
-  'cols': 'month, icecream, hoppang, sweet_potato, avg_temp(월평균 기온)', 'check': '아이스크림 8월 계절지수 1.87, 호빵 12월 2.59, 1칸 자기상관 0.79 · 12칸 0.94', 'note': '가상 데이터. 계절과 추세가 뚜렷합니다.'},
+  'cols': 'month, icecream, hoppang, sweet_potato, avg_temp(월평균 기온)', 'check': '아이스크림 8월 계절지수 1.87, 호빵 12월 2.59, 1개월 자기상관 0.79 · 12개월 0.94', 'note': '가상 데이터. 계절과 추세가 뚜렷합니다.'},
  {'id': 'ds-vacc', 'short': '백신', 'name': '호흡기 감염병 X 백신 접종량', 'file': 'week03_vaccine_1.csv', 'color': '#82b8ff', 'desc': '2014-01~2025-12, 144개월', 'week': '3주',
-  'cols': 'month, doses', 'check': '연간 봉우리 2015·2019·2023, 2023→2025 약 −28%', 'note': '가상 데이터. 몇 년 주기의 순환을 보여 줍니다.'},
+  'cols': 'month, doses', 'check': '연간 정점 2015·2019·2023, 2023→2025 약 −28%', 'note': '가상 데이터. 몇 년 주기의 순환을 보여 줍니다.'},
  {'id': 'ds-petro', 'short': '석유화학', 'name': '두바이유·나프타·에틸렌·NCC 가동률', 'file': 'week03_petrochem.csv', 'color': '#f1b646', 'desc': '2015-01~2026-08, 140개월', 'week': '3주',
   'cols': 'month, dubai($/bbl), naphtha($/t), ethylene($/t), ncc_util(%)', 'check': 'NCC 가법 계절 효과 4월 −5.7%p · 5월 −3.3%p, 스프레드 2022년부터 한 계단 하락', 'note': '가상 데이터. 사건의 시점·방향만 현실에서 가져왔습니다.'},
  {'id': 'ds-defect', 'short': '판재 판정', 'name': '불량품 판정 데이터', 'file': 'defect_judgement.csv', 'color': '#f0604d', 'desc': '1,000행 · 불량 100', 'week': '4주',
@@ -20,7 +20,7 @@ DS = [
  {'id': 'ds-plan', 'short': '면류 계획', 'name': '면류 생산계획 시트 묶음 (xlsx)', 'file': 'noodle_planning.xlsx', 'color': '#2bb3a8', 'desc': '13시트', 'week': '6주 REVIEW',
   'cols': 'README, 가정_파라미터, 일별_검색판매, 주별_판매, 제품, BOM, 원재료, 공장_라인, 교대_가동시간, 인력기준, 공정_검사, 공장_DC_운송, DC_매장', 'check': '보통 시나리오 냉면 가동률 83.1%, 환산 인원 387명', 'note': '공장·원재료·물류 값은 가상입니다.'},
  {'id': 'ds-m12', 'short': 'm1·m2 묶음', 'name': '판정 샘플·모델 비교 묶음 (목록만)', 'file': None, 'color': '#56506e', 'desc': '파일 8개', 'week': '4주',
-  'cols': 'm1_판정샘플_40.csv, m1_판정샘플_40_정답키.csv, m2_모델성능_비교표.csv, m2_테스트데이터_공통.csv, m2_테스트데이터_정답포함.csv, m2_학습데이터_불량18/50/100.csv', 'check': '—', 'note': '이번에 받은 자료에 파일이 없어 이름만 적었습니다. 파일을 주시면 이 칸과 4주 리포트에 더합니다.'},
+  'cols': 'm1_판정샘플_40.csv, m1_판정샘플_40_정답키.csv, m2_모델성능_비교표.csv, m2_테스트데이터_공통.csv, m2_테스트데이터_정답포함.csv, m2_학습데이터_불량18/50/100.csv', 'check': '—', 'note': '이번에 받은 자료에 파일이 없어 이름만 적었습니다. 파일을 주시면 이 항목과 4주 리포트에 더합니다.'},
  {'id': 'ds-six', 'short': '가상 공장 6종', 'name': '업종별 가상 공장 6종 (OT 계획)', 'file': None, 'color': '#3f7fb5', 'desc': '한 학기 동안 쓸 데이터', 'week': '7~15주',
   'cols': '사출성형 A라인(기준) · 자동차 부품 조립 · 석유화학 연속 · 철강·소재 · 식음료 배치 · 전자부품 SMT', 'check': '%와 ppm은 같은 말이 아님 · 같은 OEE 공식이 다른 분모', 'note': '7주부터 빈 슬롯과 함께 채워질 데이터입니다.'},
 ]
@@ -30,7 +30,7 @@ def _sub(i, d):
     return {'id': d['id'], 'title': d['name'], 'tags': [f'쓰는 주차: {d["week"]}', d['desc']],
             'body': [f'<div class="tw"><table class="tb"><tr><th>열</th><td>{d["cols"]}</td></tr><tr><th>검수 기준 숫자</th><td>{d["check"]}</td></tr><tr><th>메모</th><td>{d["note"]}</td></tr></table></div>', dl],
             'talk': [[('moa', 'e07', '이 상자는 제가 정리했어요. 검수 기준 숫자를 AI 결과와 맞춰 보세요.')], [('sia', 'e10', '열 이름 철자가 원자료와 같은지 확인했습니다.')], [('x3', 'e16', '(삐빅)')]][i % 3],
-            'quiz': [{'q': f'{d["short"]} 데이터를 쓰는 주차는?', 'o': [d['week'], '15주'], 'a': 0, 'why': '데이터 상자 꼬리표에 적혀 있습니다.'}]}
+            'quiz': [{'q': f'{d["short"]} 데이터를 쓰는 주차는?', 'o': [d['week'], '15주'], 'a': 0, 'why': '데이터 상자 이름표에 적혀 있습니다.'}]}
 
 CH = {
  'slug': 'appA', 'num': 'A', 'title': '부록 A · 데이터 창고',
