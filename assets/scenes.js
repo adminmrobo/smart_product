@@ -179,7 +179,7 @@ export const scenes = {
     await api.chars([{ key: 'doctor', x: -12, z: 1.2, ry: .3, pose: 'explain' }, { key: 'haru', x: -10.4, z: 1.5, pose: 'wave' }, { key: 'fruitfly', x: -6.6, z: 1.2, pose: 'think' }, { key: 'jupanbot', x: -5, z: 1.5, pose: 'cheer' }, { key: 'sia', x: 0, z: 1.2, pose: 'idle' }, { key: 'moa', x: 1.6, z: 1.5, pose: 'cheer' }, ...crowd(6, 1.6)]);
   },
 
-  // 7주차 · 기어 가공 라인 (호빙·열처리·연삭·검사) + 파레토 기둥 + 자리 지도 바닥
+  // 7주차 · 기어 가공 라인 (호빙·열처리·연삭·검사) + 파레토 막대 + 불량 분포도 바닥
   async w07(api, stage) {
     wall(api, { title: '기어 가공 라인 · 불량은 어디서 터지는가', len: 48 });
     const CAUSE = [['twf', '공구 마모', '#f1b646', 4], ['hdf', '열 방출', '#f0604d', 4], ['osf', '과부하', '#d672d6', 3], ['pwf', '전력', '#82b8ff', 2], ['rnf', '무작위', '#9aa5aa', 1]];
@@ -195,17 +195,17 @@ export const scenes = {
       if (m.userData.last == null || px < m.userData.last) m.userData.bad = R() < .13;
       m.userData.last = px; if (m.userData.bad && k >= 4) m.material = api.mat('#f0604d');
     } });
-    // 파레토 기둥 (원인 건수) — 벽 앞
+    // 파레토 막대 (원인 건수) — 벽 앞
     const par = api.group({ x: 9, z: -6 });
     let cum = 0; CAUSE.forEach((c, i) => { cum += c[3]; api.box(1.1, c[3] * .9, 1.1, c[2], { parent: par, x: i * 1.5, y: c[3] * .45, tip: `<b>${c[0]} · ${c[1]}</b><br>${c[3]}건 · 누적 ${(cum / 14 * 100).toFixed(1)}%` }); api.label(c[0], { parent: par, x: i * 1.5, y: c[3] * .9 + .5, size: .45, bg: 'none' }); });
     api.box(7.4, .06, .06, '#f1b646', { parent: par, x: 3, y: 3.6 * .9 * .8 + .4 }); api.label('파레토 · 원인 건수 14 (불량 부품 13)', { parent: par, x: 3, y: 5.2, size: .55 });
-    // 자리 지도 바닥 (3×3) — 데이터는 본문 스크립트가 window.H7 로 넘긴다
+    // 불량 분포도 바닥 (3×3) — 데이터는 본문 스크립트가 window.H7 로 넘긴다
     const H = window.H7 || []; const maps = H.map((h, j) => {
       const g = api.group({ x: -10, z: -5.6 }); g.visible = j === 0;
       h.cells.forEach((row, a) => row.forEach((c, b) => { const r = c[0], n = c[1]; const v = Math.min(1, r / .4);
         const col = n < 5 ? '#4a4f63' : '#' + [255, Math.round(240 - 150 * v), Math.round(220 - 200 * v)].map(x => x.toString(16).padStart(2, '0')).join('');
         api.box(1.7, .15 + r * 4, 1.7, col, { parent: g, x: b * 1.9, z: a * 1.6 - 1.6, y: (.15 + r * 4) / 2, tip: `<b>${h.x} ${h.xl[a]} × ${h.y} ${h.yl[b]}</b><br>불량률 ${(r * 100).toFixed(0)}% (n=${n})${n < 5 ? ' · 표본 부족' : ''}` }); }));
-      api.label(`자리 지도 · ${h.name}`, { parent: g, x: 1.9, y: 2.9, z: -1.6, size: .55 }); return g; });
+      api.label(`불량 분포도 · ${h.name}`, { parent: g, x: 1.9, y: 2.9, z: -1.6, size: .55 }); return g; });
     if (maps.length) hudButtons(stage, H.map(h => h.name), i => { maps.forEach((g, j) => { g.visible = i === j; }); api.render && api.render(); });
     await api.chars([{ key: 'doctor', x: 4, z: 6.5, ry: -.3, pose: 'explain' }, { key: 'haru', x: 2.2, z: 6.8, pose: 'hold' }, { key: 'fruitfly', x: -6, z: -1.6, ry: Math.PI * .8, pose: 'think' }, { key: 'jupanbot', x: 16, z: -3.2, ry: -1.2, pose: 'cheer' }, { key: 'sia', x: 11, z: 5, pose: 'referee' }, { key: 'moa', x: 12.8, z: 5.3, pose: 'hold' }, ...crowd(-15, 6.5)]);
   },

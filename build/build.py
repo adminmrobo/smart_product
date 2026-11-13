@@ -150,7 +150,7 @@ def render_sub(s, g, n):
         h.append(f'<div class="panel" data-w="{name}" id="w-{s["id"]}">{inner}</div>')
     if s.get('explain'):
         h.append('<div class="explain"><h4>풀이</h4>' + paras(s['explain'], g) + '</div>')
-    if s.get('limit'): h.append(f'<p class="lim"><b>이 칸의 한계</b> — {s["limit"]}</p>')
+    if s.get('limit'): h.append(f'<p class="lim"><b>한계</b> — {s["limit"]}</p>')
     if s.get('bridge'): h.append(f'<div class="bridge"><h4>{s["bridge"][0]}</h4><p style="margin:0">{s["bridge"][1]}</p></div>')
     if s.get('code'):
         rows = ''.join(f'<tr><td><code>{E(c)}</code></td><td>{m}</td></tr>' for c, m in s['code'])
