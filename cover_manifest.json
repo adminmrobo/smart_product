@@ -1,0 +1,228 @@
+{
+ "series_ko": "스마트 제조 연구실",
+ "title_ko": "스마트 제조 연구실 — 3D로 보는 15주",
+ "site_url": "https://adminmrobo.github.io/smart_product/",
+ "site_title": "스마트 제조 연구실",
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover",
+   "role": "cover",
+   "path": "img/cover.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w01",
+   "role": "scene",
+   "path": "img/w01.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w02",
+   "role": "scene",
+   "path": "img/w02.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w03",
+   "role": "scene",
+   "path": "img/w03.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w04",
+   "role": "scene",
+   "path": "img/w04.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w05",
+   "role": "scene",
+   "path": "img/w05.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_w06",
+   "role": "scene",
+   "path": "img/w06.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_appA",
+   "role": "scene",
+   "path": "img/appA.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  },
+  {
+   "id": "sc_appB",
+   "role": "scene",
+   "path": "img/appB.webp",
+   "size": [
+    960,
+    540
+   ],
+   "characters": [
+    "doctor",
+    "haru",
+    "fruitfly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot",
+   "prompt_en": null,
+   "source_of": null,
+   "status": "ok"
+  }
+ ],
+ "updated": "2026-11-13"
+}

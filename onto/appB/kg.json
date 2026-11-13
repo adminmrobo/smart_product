@@ -1,0 +1,777 @@
+{
+ "version": "1.0",
+ "page": "appB",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smappB",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 B 강의 자료",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#kgx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-01",
+   "type": "Concept",
+   "label": {
+    "ko": "5원칙 빈 양식",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-five",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 역할·맥락·조건·형식·예시에, 이 사이트가 덧붙인 \"검수 기준\" 한 칸까지."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-01-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-five",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-02",
+   "type": "Concept",
+   "label": {
+    "ko": "작업지시서 → 토큰 → 5줄 요약",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-token",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 토큰 목록이 원문 순서·수치와 같은지 대조합니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-02-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-token",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-03",
+   "type": "Concept",
+   "label": {
+    "ko": "「떨림」 두 문장",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-ctx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 문맥 단어 하나만 바꿔 답의 방향을 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-03-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-ctx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-04",
+   "type": "Concept",
+   "label": {
+    "ko": "4개 언어 안전 표지판",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-sign",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 「위험」 굵게 표시가 네 언어 모두 있는지 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-04-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-sign",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-05",
+   "type": "Concept",
+   "label": {
+    "ko": "불량 리포트 숨은 조합",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-combo",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 불량률마다"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-05-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-combo",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-06",
+   "type": "Concept",
+   "label": {
+    "ko": "진동 로그 다음 값",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-vib",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 직선 추세 0.083g/분, 14:28 약 0.82g과 대조합니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-06-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-vib",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-07",
+   "type": "Concept",
+   "label": {
+    "ko": "회의록 → 결정 5줄",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-minutes",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 결정마다"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-07-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-minutes",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-08",
+   "type": "Concept",
+   "label": {
+    "ko": "계절지수 12개 계산",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-season",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 아이스크림 8월 1.87, 호빵 12월 2.59."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-08-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-season",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-09",
+   "type": "Concept",
+   "label": {
+    "ko": "판정 기준 도출 분류 모델 (Colab)",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-colab",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 혼동행렬과 재현율이 함께 나오는지 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-09-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-colab",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-10",
+   "type": "Concept",
+   "label": {
+    "ko": "분류 결과 카드 (QWEN)",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-cls",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — machine_failure 0이면 mode는 null."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-10-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-cls",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-11",
+   "type": "Concept",
+   "label": {
+    "ko": "회귀 결과 카드 (QWEN)",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-reg",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 예시값을 데이터 직선(80분 0.32, 220분 0.87)으로 바꿔 비교해 보세요(5주 리포트)."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-11-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-reg",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-12",
+   "type": "Concept",
+   "label": {
+    "ko": "분기형 작업지시서 한 페이지 앱",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-app",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 외부 주소 없음, 0.40·0.70, 다섯 칸, A4 한 장."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-12-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-app",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appB-13",
+   "type": "Concept",
+   "label": {
+    "ko": "면류 2027 여름 생산계획",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#pb-plan",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "검수 포인트 — 보통 시나리오 냉면 83.1%, 환산 387명."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appB-13-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 프롬프트를 돌린 뒤 가장 먼저 할 일은?",
+    "en": ""
+   },
+   "page": "appB",
+   "anchor": "#q-pb-plan",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/sm-appB-01",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-five",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-01",
+   "p": "lab:derivedFrom",
+   "o": "lab:work/ahn2026smappB",
+   "anchor": "#pb-five",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-appB-01-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-01",
+   "anchor": "#q-pb-five",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-02",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-token",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-01",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-02",
+   "anchor": "#pb-token",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-02-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-02",
+   "anchor": "#q-pb-token",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-03",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-ctx",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-02",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-03",
+   "anchor": "#pb-ctx",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-03-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-03",
+   "anchor": "#q-pb-ctx",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-04",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-sign",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-03",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-04",
+   "anchor": "#pb-sign",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-04-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-04",
+   "anchor": "#q-pb-sign",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-05",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-combo",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-04",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-05",
+   "anchor": "#pb-combo",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-05-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-05",
+   "anchor": "#q-pb-combo",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-06",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-vib",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-05",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-06",
+   "anchor": "#pb-vib",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-06-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-06",
+   "anchor": "#q-pb-vib",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-07",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-minutes",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-06",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-07",
+   "anchor": "#pb-minutes",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-07-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-07",
+   "anchor": "#q-pb-minutes",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-08",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-season",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-07",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-08",
+   "anchor": "#pb-season",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-08-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-08",
+   "anchor": "#q-pb-season",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-09",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-colab",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-08",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-09",
+   "anchor": "#pb-colab",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-09-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-09",
+   "anchor": "#q-pb-colab",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-10",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-cls",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-09",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-10",
+   "anchor": "#pb-cls",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-10-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-10",
+   "anchor": "#q-pb-cls",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-11",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-reg",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-10",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-11",
+   "anchor": "#pb-reg",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-11-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-11",
+   "anchor": "#q-pb-reg",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-12",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-app",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-11",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-12",
+   "anchor": "#pb-app",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-12-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-12",
+   "anchor": "#q-pb-app",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-13",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appB",
+   "anchor": "#pb-plan",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appB-12",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appB-13",
+   "anchor": "#pb-plan",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appB-13-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appB-13",
+   "anchor": "#q-pb-plan",
+   "confidence": "high"
+  }
+ ]
+}

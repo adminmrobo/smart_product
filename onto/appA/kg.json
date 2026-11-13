@@ -1,0 +1,545 @@
+{
+ "version": "1.0",
+ "page": "appA",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smappA",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 A 강의 자료",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#kgx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-01",
+   "type": "Concept",
+   "label": {
+    "ko": "빙과·호빵·군고구마 월별 판매",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-foods",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — week03_seasonal_foods.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-01-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "식품 공장 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-foods",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-02",
+   "type": "Concept",
+   "label": {
+    "ko": "호흡기 감염병 X 백신 접종량",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-vacc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — week03_vaccine_1.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-02-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "백신 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-vacc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-03",
+   "type": "Concept",
+   "label": {
+    "ko": "두바이유·나프타·에틸렌·NCC 가동률",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-petro",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — week03_petrochem.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-03-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "석유화학 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-petro",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-04",
+   "type": "Concept",
+   "label": {
+    "ko": "불량품 판정 데이터",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-defect",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — defect_judgement.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-04-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "판재 판정 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-defect",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-05",
+   "type": "Concept",
+   "label": {
+    "ko": "AI4I 2024 미니 (예지보전)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-ai4i",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — ai4i_2024_mini.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-05-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "AI4I 미니 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-ai4i",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-06",
+   "type": "Concept",
+   "label": {
+    "ko": "면류 일별 검색·판매·프로모션",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-noodle",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — noodle_search_sales_daily.csv"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-06-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "면류 일별 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-noodle",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-07",
+   "type": "Concept",
+   "label": {
+    "ko": "면류 생산계획 시트 묶음 (xlsx)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-plan",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "내려받기 — noodle_planning.xlsx"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-07-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "면류 계획 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-plan",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-08",
+   "type": "Concept",
+   "label": {
+    "ko": "판정 샘플·모델 비교 묶음 (목록만)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-m12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "파일 없음 — 목록만"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-08-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "m1·m2 묶음 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-m12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-appA-09",
+   "type": "Concept",
+   "label": {
+    "ko": "업종별 가상 공장 6종 (OT 계획)",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#ds-six",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "파일 없음 — 목록만"
+   }
+  },
+  {
+   "id": "lab:quiz/sm-appA-09-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "가상 공장 6종 데이터를 쓰는 주차는?",
+    "en": ""
+   },
+   "page": "appA",
+   "anchor": "#q-ds-six",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/sm-appA-01",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-foods",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-01",
+   "p": "lab:derivedFrom",
+   "o": "lab:work/ahn2026smappA",
+   "anchor": "#ds-foods",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-appA-01-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-01",
+   "anchor": "#q-ds-foods",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-02",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-vacc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-01",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-02",
+   "anchor": "#ds-vacc",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-02-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-02",
+   "anchor": "#q-ds-vacc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-03",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-petro",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-02",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-03",
+   "anchor": "#ds-petro",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-03-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-03",
+   "anchor": "#q-ds-petro",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-04",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-defect",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-03",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-04",
+   "anchor": "#ds-defect",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-04-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-04",
+   "anchor": "#q-ds-defect",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-05",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-ai4i",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-04",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-05",
+   "anchor": "#ds-ai4i",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-05-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-05",
+   "anchor": "#q-ds-ai4i",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-06",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-noodle",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-05",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-06",
+   "anchor": "#ds-noodle",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-06-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-06",
+   "anchor": "#q-ds-noodle",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-07",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-plan",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-06",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-07",
+   "anchor": "#ds-plan",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-07-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-07",
+   "anchor": "#q-ds-plan",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-08",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-m12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-07",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-08",
+   "anchor": "#ds-m12",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-08-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-08",
+   "anchor": "#q-ds-m12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-09",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-appA",
+   "anchor": "#ds-six",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-appA-08",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-appA-09",
+   "anchor": "#ds-six",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:quiz/sm-appA-09-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-appA-09",
+   "anchor": "#q-ds-six",
+   "confidence": "high"
+  }
+ ]
+}

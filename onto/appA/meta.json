@@ -1,0 +1,35 @@
+{
+ "title": "부록 A · 데이터 창고",
+ "number": "A",
+ "series": "스마트 제조 연구실",
+ "about": [
+  "lab:concept/sm-appA-01"
+ ],
+ "basedOn": [
+  "ahn2026smappA"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-13",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/smart_product/weeks/appA/index.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 부록 A · 데이터 창고. 스마트 제조 연구실 A, v1.0."
+}

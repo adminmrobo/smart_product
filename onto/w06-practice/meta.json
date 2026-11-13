@@ -1,0 +1,35 @@
+{
+ "title": "2027년 여름, 면류 3사는 몇 교대로 몇 명이 무엇을 사 둬야 할까?",
+ "number": "w06-R",
+ "series": "스마트 제조 연구실",
+ "about": [
+  "lab:claim/sm-w06-finding"
+ ],
+ "basedOn": [
+  "ahn2026smw06r"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-13",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/smart_product/weeks/w06/practice.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "finding report",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 2027년 여름, 면류 3사는 몇 교대로 몇 명이 무엇을 사 둬야 할까?. 스마트 제조 연구실 w06-R, v1.0."
+}

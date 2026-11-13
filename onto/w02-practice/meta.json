@@ -1,0 +1,35 @@
+{
+ "title": "같은 프롬프트, 다른 답 — 숫자가 든 답부터 검산하라",
+ "number": "w02-R",
+ "series": "스마트 제조 연구실",
+ "about": [
+  "lab:claim/sm-w02-finding"
+ ],
+ "basedOn": [
+  "ahn2026smw02r"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-13",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/smart_product/weeks/w02/practice.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "finding report",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 같은 프롬프트, 다른 답 — 숫자가 든 답부터 검산하라. 스마트 제조 연구실 w02-R, v1.0."
+}

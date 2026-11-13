@@ -1,0 +1,35 @@
+{
+ "title": "마모 점수 하나로 100대를 나누면, 누가 잘못된 카드를 받을까?",
+ "number": "w05-R",
+ "series": "스마트 제조 연구실",
+ "about": [
+  "lab:claim/sm-w05-finding"
+ ],
+ "basedOn": [
+  "ahn2026smw05r"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-13",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/smart_product/weeks/w05/practice.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "finding report",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 마모 점수 하나로 100대를 나누면, 누가 잘못된 카드를 받을까?. 스마트 제조 연구실 w05-R, v1.0."
+}

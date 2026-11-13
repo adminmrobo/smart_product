@@ -1,0 +1,1183 @@
+{
+ "version": "1.0",
+ "page": "w06",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw06",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 06 강의 자료",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#kgx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-01",
+   "type": "Concept",
+   "label": {
+    "ko": "다섯 주 한 장 지도",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "다섯 주 한 장 지도"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-01",
+   "type": "Limitation",
+   "label": {
+    "ko": "자가 진단은 저장되지 않습니다.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-1",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "자가 진단은 저장되지 않습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-01-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "8주 제출물의 성격은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-02",
+   "type": "Concept",
+   "label": {
+    "ko": "1주 다시 보기 — 스마트공장과 검수",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "스마트공장은 데이터로 보고·판단·제어하는 공장이고, 수준은 미적용·기초·중간1·중간2·고도화입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-02",
+   "type": "Limitation",
+   "label": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-02-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "수업 실습에 회사 실데이터를 쓸 수 있나?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-03",
+   "type": "Concept",
+   "label": {
+    "ko": "2주 다시 보기 — 생성형 AI의 원리와 프롬프트",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "AI는 글을 토큰과 숫자 ID로 바꾸고, 임베딩으로 의미 좌표를 주고, 어텐션으로 중요한 말에 집중해, 다음 토큰을 확률로 골라 문장을 만듭니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-03",
+   "type": "Limitation",
+   "label": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-03-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "AI 답에서 가장 먼저 검산할 곳은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-04",
+   "type": "Concept",
+   "label": {
+    "ko": "3주 다시 보기 — 시계열",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "시계열은 순서가 정보입니다(자기상관)."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-04",
+   "type": "Limitation",
+   "label": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-04-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "순환을 다루는 방법은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-05",
+   "type": "Concept",
+   "label": {
+    "ko": "4주 다시 보기 — 분류와 회귀",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "라벨은 분류, 숫자는 회귀입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-05",
+   "type": "Limitation",
+   "label": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-05-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "정확도가 비슷한 모델 중 고를 것은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-06",
+   "type": "Concept",
+   "label": {
+    "ko": "5주 다시 보기 — 작업지시서",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "작업지시서는 점검표(결과) + 회의록(결정) + 매뉴얼(방법)을 한 장에 모은 카드입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-06",
+   "type": "Limitation",
+   "label": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "복습 문제는 본문 내용을 다시 확인하는 용도입니다. 틀린 문제는 링크로 해당 주차에 돌아가 보세요."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-06-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "few-shot 예시값이 데이터보다 0.1 낮으면?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-07",
+   "type": "Concept",
+   "label": {
+    "ko": "종합 사례 — 면류 3사의 데이터",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "면류 데이터는 2016-01-01부터 2026-10-03까지 일별 기록입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-07",
+   "type": "Limitation",
+   "label": {
+    "ko": "판매·공장·원재료·물류 값은 교육용 가상 데이터이고, 검색지수만 실제 데이터입니다(엑셀 README).",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "판매·공장·원재료·물류 값은 교육용 가상 데이터이고, 검색지수만 실제 데이터입니다(엑셀 README)."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-07-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 데이터에서 실제(가상 아님) 값은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-08",
+   "type": "Concept",
+   "label": {
+    "ko": "검색이 오르면 판매가 오른다? — 상관과 선행 신호",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "3주에서 순환은 맞히지 말고 선행 신호로 가늠한다고 했습니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-08",
+   "type": "Limitation",
+   "label": {
+    "ko": "상관 0.82는 2016~2026 전체 일별 데이터의 값입니다. 계절을 뺀 뒤의 상관은 더 낮을 수 있습니다.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-8",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "상관 0.82는 2016~2026 전체 일별 데이터의 값입니다. 계절을 뺀 뒤의 상관은 더 낮을 수 있습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-08-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "검색지수와 판매의 상관이 높을 때 가장 안전한 해석은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-09",
+   "type": "Concept",
+   "label": {
+    "ko": "계절지수와 프로모션 — 여름 모양이 셋 다 다르다",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "월 계절지수로 보면 냉면은 7월 2.02, 콩국수는 7월 3.07, 비빔면은 6월 1.50이 최대입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-09",
+   "type": "Limitation",
+   "label": {
+    "ko": "프로모션 효과는 같은 달 평균과의 단순 비교라, 요일·날씨 차이가 섞여 있습니다.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-9",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "프로모션 효과는 같은 달 평균과의 단순 비교라, 요일·날씨 차이가 섞여 있습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-09-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "여름 쏠림이 가장 날카로운 제품은?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-10",
+   "type": "Concept",
+   "label": {
+    "ko": "2027년 여름 수요 — 한 점이 아니라 세 갈래",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-10",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "세 시나리오의 차이가 곧 위험의 크기입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-10",
+   "type": "Limitation",
+   "label": {
+    "ko": "세 시나리오는 과거 4년의 범위일 뿐입니다. 2027년이 그 밖으로 나갈 수도 있습니다(3주 석유화학의 교훈).",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-10",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "세 시나리오는 과거 4년의 범위일 뿐입니다. 2027년이 그 밖으로 나갈 수도 있습니다(3주 석유화학의 교훈)."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-10-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "시나리오를 쓰는 가장 큰 이유는?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-10",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-11",
+   "type": "Concept",
+   "label": {
+    "ko": "라인 능력과 교대 — 가동률 85%와 95%",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "보통 시나리오는 냉면·콩국수 3교대(83.1%, 82.6%), 비빔면 2교대(84.9%)로 목표 85% 안에 들어옵니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-11",
+   "type": "Limitation",
+   "label": {
+    "ko": "라인 간 전환(냉면 라인으로 콩국수 생산 등)과 공장 간 이동은 고려하지 않았습니다. 엑셀의 공장_라인 시트대로 제품별 라인이 고정이라고 봤습니",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-11",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "라인 간 전환(냉면 라인으로 콩국수 생산 등)과 공장 간 이동은 고려하지 않았습니다. 엑셀의 공장_라인 시트대로 제품별 라인이 고정이라고 봤습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-11-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "가동률이 95%를 넘으면?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-12",
+   "type": "Concept",
+   "label": {
+    "ko": "인력·원재료·리드타임 — 월요일 발주서",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "하루 필요"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-12",
+   "type": "Limitation",
+   "label": {
+    "ko": "안전재고 3일분(원재료 시트)과 현재 재고는 넣지 않은 \"소요량\"입니다. 실제 발주량 = 소요량 + 안전재고 − 현재고를 발주 단위로 올림합니다",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-12",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "안전재고 3일분(원재료 시트)과 현재 재고는 넣지 않은 \"소요량\"입니다. 실제 발주량 = 소요량 + 안전재고 − 현재고를 발주 단위로 올림합니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-12-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "보통 시나리오 하루 필요 인원 276명, 환산계수 1.4면?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w06-13",
+   "type": "Concept",
+   "label": {
+    "ko": "8주 제안서로 잇기 — 다섯 칸 미리 채우기",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "면류 사례를 8주 제안서 다섯 칸에 넣어 보면 이렇습니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06-13",
+   "type": "Limitation",
+   "label": {
+    "ko": "이 예시는 수업용 가상 공장의 것입니다. 8주 제안서는 자기 공정(익명화)으로 씁니다.",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#sec-6-13",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 예시는 수업용 가상 공장의 것입니다. 8주 제안서는 자기 공정(익명화)으로 씁니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w06-13-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "\"매주 월요일 시나리오 재계산 → 발주 초안 자동 생성\"은 다섯 칸 중?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#q-sec-6-13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:sim/sm-w06-duel",
+   "type": "Simulation",
+   "label": {
+    "ko": "대결 — 2027년 여름, 보통 시나리오 하나로 충분할까?",
+    "en": ""
+   },
+   "page": "w06",
+   "anchor": "#duel",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "2027년 여름, 보통 시나리오 하나로 충분할까?"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/sm-w06-01",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-01",
+   "p": "lab:derivedFrom",
+   "o": "lab:work/ahn2026smw06",
+   "anchor": "#sec-6-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-01",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-01",
+   "anchor": "#sec-6-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-01-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-01",
+   "anchor": "#q-sec-6-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-02",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-01",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-02",
+   "anchor": "#sec-6-2",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-02",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-02",
+   "anchor": "#sec-6-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-02-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-02",
+   "anchor": "#q-sec-6-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-03",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-02",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-03",
+   "anchor": "#sec-6-3",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-03",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-03",
+   "anchor": "#sec-6-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-03-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-03",
+   "anchor": "#q-sec-6-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-04",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-03",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-04",
+   "anchor": "#sec-6-4",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-04",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-04",
+   "anchor": "#sec-6-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-04-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-04",
+   "anchor": "#q-sec-6-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-05",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-04",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-05",
+   "anchor": "#sec-6-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-05",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-05",
+   "anchor": "#sec-6-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-05-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-05",
+   "anchor": "#q-sec-6-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-06",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-05",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-06",
+   "anchor": "#sec-6-6",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-06",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-06",
+   "anchor": "#sec-6-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-06-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-06",
+   "anchor": "#q-sec-6-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-07",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-06",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-07",
+   "anchor": "#sec-6-7",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-07",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-07",
+   "anchor": "#sec-6-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-07-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-07",
+   "anchor": "#q-sec-6-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-08",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-07",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-08",
+   "anchor": "#sec-6-8",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-08",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-08",
+   "anchor": "#sec-6-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-08-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-08",
+   "anchor": "#q-sec-6-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-09",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-08",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-09",
+   "anchor": "#sec-6-9",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-09",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-09",
+   "anchor": "#sec-6-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-09-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-09",
+   "anchor": "#q-sec-6-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-10",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-09",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-10",
+   "anchor": "#sec-6-10",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-10",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-10",
+   "anchor": "#sec-6-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-10-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-10",
+   "anchor": "#q-sec-6-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-11",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-10",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-11",
+   "anchor": "#sec-6-11",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-11",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-11",
+   "anchor": "#sec-6-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-11-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-11",
+   "anchor": "#q-sec-6-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-12",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-11",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-12",
+   "anchor": "#sec-6-12",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-12",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-12",
+   "anchor": "#sec-6-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-12-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-12",
+   "anchor": "#q-sec-6-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-13",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-6-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-12",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w06-13",
+   "anchor": "#sec-6-13",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w06-13",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06-13",
+   "anchor": "#sec-6-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w06-13-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w06-13",
+   "anchor": "#q-sec-6-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w06-01",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/sm-w06-duel",
+   "anchor": "#duel",
+   "confidence": "medium"
+  }
+ ]
+}

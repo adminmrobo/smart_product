@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "page": "w04-practice",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw04r",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 w04 실습 계산",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#refs",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:claim/sm-w04-finding",
+   "type": "Claim",
+   "label": {
+    "ko": "불량품 판정 데이터에서 불량은 \"표면 거칠기 4.9μm 초과 · 초음파 27.5dB 초과 · 폭 302.5mm 초과\" 세 기준으로 대부분 설명되었고(재현율 77%, 정밀도 98.7%), 오븐 온도는 판정과 거의 무관",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#summary",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "불량품 판정 데이터에서 불량은 \"표면 거칠기 4.9μm 초과 · 초음파 27.5dB 초과 · 폭 302.5mm 초과\" 세 기준으로 대부분 설명되었고(재현율 77%, 정밀도 98.7%), 오븐 온도는 판정과 거의 무관했습니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw04r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:dataset/sm-w04",
+   "type": "Dataset",
+   "label": {
+    "ko": "수업 데이터 (가상)",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#sec-r4-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 리포트가 계산에 쓴 수업용 데이터"
+   }
+  },
+  {
+   "id": "lab:method/sm-w04",
+   "type": "Method",
+   "label": {
+    "ko": "방법 — 방법 — 프롬프트 한 장, 모델 여섯 개",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#sec-r4-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "방법 — 프롬프트 한 장, 모델 여섯 개"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w04",
+   "type": "Limitation",
+   "label": {
+    "ko": "의의와 한계",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#sec-r4-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "가상 데이터·작은 표본 등 리포트가 밝힌 한계"
+   }
+  },
+  {
+   "id": "lab:question/sm-w04",
+   "type": "Question",
+   "label": {
+    "ko": "추측·후속 과제",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#sec-r4-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "반론과 다른 설명 장의 추측"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w04-alt",
+   "type": "Claim",
+   "label": {
+    "ko": "반론과 다른 설명",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#sec-r4-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "같은 결과를 달리 설명하는 길"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w04-ev1",
+   "type": "Claim",
+   "label": {
+    "ko": "세 기준으로 1,000개를 가르면 TP 77 · FN 23 · FP 1 · TN 899입니다(표 2).",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 세 기준으로 1,000개를 가르면 TP 77 · FN 23 · FP 1 · TN 899입니다(표 2)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw04r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w04-ev2",
+   "type": "Claim",
+   "label": {
+    "ko": "오븐 온도 평균은 정상 179.98℃, 불량 179.89℃로 거의 같습니다(표 1).",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 오븐 온도 평균은 정상 179.98℃, 불량 179.89℃로 거의 같습니다(표 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw04r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w04-ev3",
+   "type": "Claim",
+   "label": {
+    "ko": "6개 모델의 5겹 교차검증 정확도는 94.4~97.1%로 비슷했고, 테스트 재현율은 55~80%로 크게 갈렸습니다(표 3).",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 6개 모델의 5겹 교차검증 정확도는 94.4~97.1%로 비슷했고, 테스트 재현율은 55~80%로 크게 갈렸습니다(표 3)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw04r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w04-ev4",
+   "type": "Claim",
+   "label": {
+    "ko": "놓친 23개는 폭 301~302.5mm 구간에 몰려 있습니다. 폭은 딱 자르는 선이 아니라 불량 확률이 서서히 오르는 회색 지대로 읽힙니다(그림 2).",
+    "en": ""
+   },
+   "page": "w04-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "해석 놓친 23개는 폭 301~302.5mm 구간에 몰려 있습니다. 폭은 딱 자르는 선이 아니라 불량 확률이 서서히 오르는 회색 지대로 읽힙니다(그림 2)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw04r",
+     "loc": "Summary"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/sm-w04-finding",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026smw04r",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w04",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/sm-w04",
+   "anchor": "#sec-r4-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w04",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#sec-r4-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-finding",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w04",
+   "anchor": "#sec-r4-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-finding",
+   "p": "lab:raises",
+   "o": "lab:question/sm-w04",
+   "anchor": "#sec-r4-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-alt",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#sec-r4-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:method/sm-w04",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w04",
+   "anchor": "#sec-r4-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-ev1",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-ev2",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-ev3",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w04-ev4",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w04-finding",
+   "anchor": "#summary",
+   "confidence": "medium"
+  }
+ ]
+}

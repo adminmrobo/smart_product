@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "page": "w06-practice",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw06r",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 w06 실습 계산",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#refs",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:claim/sm-w06-finding",
+   "type": "Claim",
+   "label": {
+    "ko": "2027년 여름 보통 시나리오에서는 냉면·콩국수 3교대, 비빔면 2교대로 가동률 83~85%에 들어오고 하루 387명(환산)이 필요하며, 높음 시나리오에서는 비빔면 3교대 전환과 416명이 필요합니다.",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#summary",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "2027년 여름 보통 시나리오에서는 냉면·콩국수 3교대, 비빔면 2교대로 가동률 83~85%에 들어오고 하루 387명(환산)이 필요하며, 높음 시나리오에서는 비빔면 3교대 전환과 416명이 필요합니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw06r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:dataset/sm-w06",
+   "type": "Dataset",
+   "label": {
+    "ko": "수업 데이터 (가상)",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#sec-r6-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 리포트가 계산에 쓴 수업용 데이터"
+   }
+  },
+  {
+   "id": "lab:method/sm-w06",
+   "type": "Method",
+   "label": {
+    "ko": "방법 — 방법 — 시나리오 → 가동률 → 인원 → 원재료",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#sec-r6-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "방법 — 시나리오 → 가동률 → 인원 → 원재료"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w06",
+   "type": "Limitation",
+   "label": {
+    "ko": "의의와 한계",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#sec-r6-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "가상 데이터·작은 표본 등 리포트가 밝힌 한계"
+   }
+  },
+  {
+   "id": "lab:question/sm-w06",
+   "type": "Question",
+   "label": {
+    "ko": "추측·후속 과제",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#sec-r6-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "반론과 다른 설명 장의 추측"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w06-alt",
+   "type": "Claim",
+   "label": {
+    "ko": "반론과 다른 설명",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#sec-r6-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "같은 결과를 달리 설명하는 길"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w06-ev1",
+   "type": "Claim",
+   "label": {
+    "ko": "여름(6~8월) 일평균은 2023~2025년 늘다가 2026년 20~25% 줄었습니다(그림 1).",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 여름(6~8월) 일평균은 2023~2025년 늘다가 2026년 20~25% 줄었습니다(그림 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw06r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w06-ev2",
+   "type": "Claim",
+   "label": {
+    "ko": "보통 시나리오 가동률은 냉면 83.1% · 콩국수 82.6% · 비빔면 84.9%(2교대)입니다(표 2).",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 보통 시나리오 가동률은 냉면 83.1% · 콩국수 82.6% · 비빔면 84.9%(2교대)입니다(표 2)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw06r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w06-ev3",
+   "type": "Claim",
+   "label": {
+    "ko": "높음 시나리오에서 비빔면 2교대 능력(49,500팩/일)은 수요 52,401팩보다 하루 2,901팩 모자랍니다.",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 높음 시나리오에서 비빔면 2교대 능력(49,500팩/일)은 수요 52,401팩보다 하루 2,901팩 모자랍니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw06r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w06-ev4",
+   "type": "Claim",
+   "label": {
+    "ko": "계획은 보통으로 세우되, 비빔면 3교대 전환 옵션과 냉면·콩국수의 기초 재고를 높음 대비 장치로 두는 것이 이 리포트의 권고입니다.",
+    "en": ""
+   },
+   "page": "w06-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "해석 계획은 보통으로 세우되, 비빔면 3교대 전환 옵션과 냉면·콩국수의 기초 재고를 높음 대비 장치로 두는 것이 이 리포트의 권고입니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw06r",
+     "loc": "Summary"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/sm-w06-finding",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026smw06r",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w06",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/sm-w06",
+   "anchor": "#sec-r6-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w06",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#sec-r6-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-finding",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w06",
+   "anchor": "#sec-r6-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-finding",
+   "p": "lab:raises",
+   "o": "lab:question/sm-w06",
+   "anchor": "#sec-r6-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-alt",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#sec-r6-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:method/sm-w06",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w06",
+   "anchor": "#sec-r6-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-ev1",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-ev2",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-ev3",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w06-ev4",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w06-finding",
+   "anchor": "#summary",
+   "confidence": "medium"
+  }
+ ]
+}

@@ -1,0 +1,1183 @@
+{
+ "version": "1.0",
+ "page": "w02",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw02",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 02 강의 자료",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#kgx",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-01",
+   "type": "Concept",
+   "label": {
+    "ko": "왜 도구 설명이 아니라 원리부터인가",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 장은 팁 모음이 아닙니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-01",
+   "type": "Limitation",
+   "label": {
+    "ko": "모델마다 토큰을 나누는 방식, 학습한 데이터, 미세조정 방향은 다릅니다. 원리는 같아도 답의 품질은 다를 수 있습니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-1",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "모델마다 토큰을 나누는 방식, 학습한 데이터, 미세조정 방향은 다릅니다. 원리는 같아도 답의 품질은 다를 수 있습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-01-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "이 장이 원리부터 배우는 이유는?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-02",
+   "type": "Concept",
+   "label": {
+    "ko": "컴퓨터는 숫자만 처리한다 — 토큰화",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "교안의 표처럼 \"생성형 AI를 배운다\"는 [\"생성\", \"형\", \" AI\", \"를\", \" 배운\", \"다\"]처럼 쪼개질 수 있습니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-02",
+   "type": "Limitation",
+   "label": {
+    "ko": "이 실험의 \"숫자 ID\"는 예시 번호입니다. 실제 모델의 번호와 다릅니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 실험의 \"숫자 ID\"는 예시 번호입니다. 실제 모델의 번호와 다릅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-02-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "AI가 작업지시서를 처리하는 첫 단계는?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-03",
+   "type": "Concept",
+   "label": {
+    "ko": "의미는 좌표가 된다 — 임베딩",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "교안은 이 \"지도\"를 진짜 눈에 보이는 지도로 착각하지 말라고 강조합니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-03",
+   "type": "Limitation",
+   "label": {
+    "ko": "좌표는 설명용으로 손으로 놓은 값입니다. 실제 임베딩은 수백 차원이라 평면에 그대로 그릴 수 없습니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "좌표는 설명용으로 손으로 놓은 값입니다. 실제 임베딩은 수백 차원이라 평면에 그대로 그릴 수 없습니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-03-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "임베딩 공간에서 「위험」과 가장 가까울 것은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-04",
+   "type": "Concept",
+   "label": {
+    "ko": "같은 단어, 다른 뜻 — 맥락이 좌표를 옮긴다",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "AI는 단어를 고립된 사전 항목으로 처리하지 않고, 앞뒤 단어와 함께 읽으며 뜻을 조정합니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-04",
+   "type": "Limitation",
+   "label": {
+    "ko": "AI의 원인 추정은 가설입니다. 실제 원인은 측정과 점검으로 확인해야 합니다(9주차 4M 분석).",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "AI의 원인 추정은 가설입니다. 실제 원인은 측정과 점검으로 확인해야 합니다(9주차 4M 분석)."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-04-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "같은 질문에서 답의 방향을 가장 크게 바꾸는 것은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-05",
+   "type": "Concept",
+   "label": {
+    "ko": "규칙을 쓰는 방식 vs 데이터에서 배우는 방식",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "두 방식은 경쟁이 아니라 보완입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-05",
+   "type": "Limitation",
+   "label": {
+    "ko": "패턴 학습이 찾은 조합도 우연일 수 있습니다. 표본이 적으면 다음 달 데이터로 다시 확인해야 합니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "패턴 학습이 찾은 조합도 우연일 수 있습니다. 표본이 적으면 다음 달 데이터로 다시 확인해야 합니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-05-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "\"금요일 오후 + 신입 + 로트 B\" 같은 세 겹 조합을 찾는 데 유리한 것은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-06",
+   "type": "Concept",
+   "label": {
+    "ko": "다음 토큰을 하나씩 고른다",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "생성은 한 번에 완성된 판단이 아니라 연속된 확률 계산의 누적입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-06",
+   "type": "Limitation",
+   "label": {
+    "ko": "막대 값은 교안의 예시를 설명하려고 만든 수치입니다. 실제 모델의 확률이 아닙니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "막대 값은 교안의 예시를 설명하려고 만든 수치입니다. 실제 모델의 확률이 아닙니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-06-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "LLM이 두 번째 단어를 고를 때 쓰는 정보는?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-07",
+   "type": "Concept",
+   "label": {
+    "ko": "LLM 학습 3단계 — 사전학습 → 다음 토큰 → 미세조정",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사전학습은 지식 저장소를 만드는 일이라기보다, 언어 패턴에 대한 폭넓은 감각을 만드는 일입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-07",
+   "type": "Limitation",
+   "label": {
+    "ko": "실제 학습에는 사람 피드백 강화학습 등 더 많은 단계가 있습니다. 여기서는 교안의 3단계 틀로만 봅니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "실제 학습에는 사람 피드백 강화학습 등 더 많은 단계가 있습니다. 여기서는 교안의 3단계 틀로만 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-07-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "응답의 말투·안전 정책을 다듬는 단계는?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-08",
+   "type": "Concept",
+   "label": {
+    "ko": "Bot · RPA · AI는 어떻게 다른가",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "15주차 자동화 흐름은 셋을 섞습니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-08",
+   "type": "Limitation",
+   "label": {
+    "ko": "요즘 제품들은 셋을 한 서비스에 섞어 팝니다. 이름보다 \"무엇이 규칙이고 무엇이 생성인가\"를 봅니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-8",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "요즘 제품들은 셋을 한 서비스에 섞어 팝니다. 이름보다 \"무엇이 규칙이고 무엇이 생성인가\"를 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-08-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "매일 아침 MES 파일을 내려받아 같은 폴더에 저장하는 일에 맞는 것은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-09",
+   "type": "Concept",
+   "label": {
+    "ko": "트랜스포머 — 읽는 쪽과 쓰는 쪽",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "교안이 꼽는 네 가지 열쇠는 ① 인코더 ② 디코더 ③ 병렬 처리(한 단어씩 순서대로 읽던 방식에서 벗어남) ④ 장기 의존성(멀리 떨어진 단어를 연결)입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-09",
+   "type": "Limitation",
+   "label": {
+    "ko": "실제 트랜스포머에는 위치 인코딩, 여러 개의 어텐션 머리, 피드포워드 층이 수십 겹 쌓입니다. 여기서는 역할만 봅니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-9",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "실제 트랜스포머에는 위치 인코딩, 여러 개의 어텐션 머리, 피드포워드 층이 수십 겹 쌓입니다. 여기서는 역할만 봅니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-09-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "디코더가 미래 단어를 가리는 이유는?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-10",
+   "type": "Concept",
+   "label": {
+    "ko": "어텐션 — 중요한 단어에 더 집중한다",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-10",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "어텐션 덕분에 AI는 긴 문장에서도 길을 잃지 않습니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-10",
+   "type": "Limitation",
+   "label": {
+    "ko": "「커피를」 0.32, 「카페에서」 0.28 외의 값은 교안 그림에 맞춰 이 페이지가 정한 설명용 값입니다. 실제 모델은 여러 머리·여러 층의 가",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-10",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "「커피를」 0.32, 「카페에서」 0.28 외의 값은 교안 그림에 맞춰 이 페이지가 정한 설명용 값입니다. 실제 모델은 여러 머리·여러 층의 가중치를 씁니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-10-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "어텐션 가중치의 합은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-10",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-11",
+   "type": "Concept",
+   "label": {
+    "ko": "환각과 검수 — 그럴듯하게 틀린다",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "교안 사례 5의 기대 출력을 검산해 봅니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-11",
+   "type": "Limitation",
+   "label": {
+    "ko": "직선 연장도 하나의 가정입니다. 실제 설비 진동은 가속될 수도, 멈출 수도 있습니다. 예측은 점검 행동의 근거로만 씁니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-11",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "직선 연장도 하나의 가정입니다. 실제 설비 진동은 가속될 수도, 멈출 수도 있습니다. 예측은 점검 행동의 근거로만 씁니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-11-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "AI 답에서 가장 먼저 검산할 곳은?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-12",
+   "type": "Concept",
+   "label": {
+    "ko": "프롬프트 5원칙 — 역할·맥락·조건·형식·예시",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "훌륭한 프롬프트는 기계에 규칙을 주입하는 것이 아니라, 모델이 알맞은 패턴과 맥락을 꺼내도록 환경을 설계하는 일입니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-12",
+   "type": "Limitation",
+   "label": {
+    "ko": "5원칙은 출발점입니다. 답이 흔들리면 ④ 형식을 더 좁히거나 ⑤ 예시를 늘리고, 그래도 틀리면 데이터나 질문 자체를 의심합니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-12",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "5원칙은 출발점입니다. 답이 흔들리면 ④ 형식을 더 좁히거나 ⑤ 예시를 늘리고, 그래도 틀리면 데이터나 질문 자체를 의심합니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-12-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "\"JSON 한 줄로, 항목은 세 개\"는 5원칙 중 무엇인가?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:concept/sm-w02-13",
+   "type": "Concept",
+   "label": {
+    "ko": "제조 현장 여섯 사례 — 원리 지도",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "교안의 부록은 제조 사례 여섯 개를 원리 하나씩에 연결합니다."
+   }
+  },
+  {
+   "id": "lab:limit/sm-w02-13",
+   "type": "Limitation",
+   "label": {
+    "ko": "사례의 \"기대 출력\"은 교안 예시입니다. 여러분이 직접 돌린 결과와 다를 수 있고, 다른 것이 정상입니다.",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#sec-2-13",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사례의 \"기대 출력\"은 교안 예시입니다. 여러분이 직접 돌린 결과와 다를 수 있고, 다른 것이 정상입니다."
+   }
+  },
+  {
+   "id": "lab:quiz/sm-w02-13-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "「위험」이 4개 언어에서 같은 근처에 모인다는 것은 어떤 원리인가?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#q-sec-2-13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:sim/sm-w02-duel",
+   "type": "Simulation",
+   "label": {
+    "ko": "대결 — 세 겹 조합 불량, 규칙으로 잡을까 학습으로 잡을까?",
+    "en": ""
+   },
+   "page": "w02",
+   "anchor": "#duel",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "세 겹 조합 불량, 규칙으로 잡을까 학습으로 잡을까?"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/sm-w02-01",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-01",
+   "p": "lab:derivedFrom",
+   "o": "lab:work/ahn2026smw02",
+   "anchor": "#sec-2-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-01",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-01",
+   "anchor": "#sec-2-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-01-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-01",
+   "anchor": "#q-sec-2-1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-02",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-01",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-02",
+   "anchor": "#sec-2-2",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-02",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-02",
+   "anchor": "#sec-2-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-02-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-02",
+   "anchor": "#q-sec-2-2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-03",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-02",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-03",
+   "anchor": "#sec-2-3",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-03",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-03",
+   "anchor": "#sec-2-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-03-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-03",
+   "anchor": "#q-sec-2-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-04",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-03",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-04",
+   "anchor": "#sec-2-4",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-04",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-04",
+   "anchor": "#sec-2-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-04-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-04",
+   "anchor": "#q-sec-2-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-05",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-04",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-05",
+   "anchor": "#sec-2-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-05",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-05",
+   "anchor": "#sec-2-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-05-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-05",
+   "anchor": "#q-sec-2-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-06",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-05",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-06",
+   "anchor": "#sec-2-6",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-06",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-06",
+   "anchor": "#sec-2-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-06-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-06",
+   "anchor": "#q-sec-2-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-07",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-06",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-07",
+   "anchor": "#sec-2-7",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-07",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-07",
+   "anchor": "#sec-2-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-07-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-07",
+   "anchor": "#q-sec-2-7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-08",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-07",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-08",
+   "anchor": "#sec-2-8",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-08",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-08",
+   "anchor": "#sec-2-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-08-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-08",
+   "anchor": "#q-sec-2-8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-09",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-08",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-09",
+   "anchor": "#sec-2-9",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-09",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-09",
+   "anchor": "#sec-2-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-09-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-09",
+   "anchor": "#q-sec-2-9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-10",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-09",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-10",
+   "anchor": "#sec-2-10",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-10",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-10",
+   "anchor": "#sec-2-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-10-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-10",
+   "anchor": "#q-sec-2-10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-11",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-10",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-11",
+   "anchor": "#sec-2-11",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-11",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-11",
+   "anchor": "#sec-2-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-11-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-11",
+   "anchor": "#q-sec-2-11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-12",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-11",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-12",
+   "anchor": "#sec-2-12",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-12",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-12",
+   "anchor": "#sec-2-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-12-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-12",
+   "anchor": "#q-sec-2-12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-13",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w02",
+   "anchor": "#sec-2-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-12",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sm-w02-13",
+   "anchor": "#sec-2-13",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:concept/sm-w02-13",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w02-13",
+   "anchor": "#sec-2-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/sm-w02-13-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sm-w02-13",
+   "anchor": "#q-sec-2-13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sm-w02-01",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/sm-w02-duel",
+   "anchor": "#duel",
+   "confidence": "medium"
+  }
+ ]
+}

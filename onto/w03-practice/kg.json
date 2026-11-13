@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "page": "w03-practice",
+ "nodes": [
+  {
+   "id": "lab:work/ahn2026smw03r",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) 스마트 제조 w03 실습 계산",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#refs",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:claim/sm-w03-finding",
+   "type": "Claim",
+   "label": {
+    "ko": "수업 데이터로 다시 계산한 결과, 교안의 대표 숫자(1.87 · 2.6 · −5.7%p · −3.3%p · 0.79/0.94 · 8.9%)가 모두 재현되었습니다.",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#summary",
+   "level": 4,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "수업 데이터로 다시 계산한 결과, 교안의 대표 숫자(1.87 · 2.6 · −5.7%p · −3.3%p · 0.79/0.94 · 8.9%)가 모두 재현되었습니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw03r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:dataset/sm-w03",
+   "type": "Dataset",
+   "label": {
+    "ko": "수업 데이터 (가상)",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#sec-r3-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "이 리포트가 계산에 쓴 수업용 데이터"
+   }
+  },
+  {
+   "id": "lab:method/sm-w03",
+   "type": "Method",
+   "label": {
+    "ko": "방법 — 방법 — 데이터 세 묶음, 계산 네 가지",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#sec-r3-3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "방법 — 데이터 세 묶음, 계산 네 가지"
+   }
+  },
+  {
+   "id": "lab:limit/sm-w03",
+   "type": "Limitation",
+   "label": {
+    "ko": "의의와 한계",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#sec-r3-6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "가상 데이터·작은 표본 등 리포트가 밝힌 한계"
+   }
+  },
+  {
+   "id": "lab:question/sm-w03",
+   "type": "Question",
+   "label": {
+    "ko": "추측·후속 과제",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#sec-r3-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "반론과 다른 설명 장의 추측"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w03-alt",
+   "type": "Claim",
+   "label": {
+    "ko": "반론과 다른 설명",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#sec-r3-5",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "같은 결과를 달리 설명하는 길"
+   }
+  },
+  {
+   "id": "lab:claim/sm-w03-ev1",
+   "type": "Claim",
+   "label": {
+    "ko": "아이스크림 8월 1.87, 1월 0.46, 호빵 12월 2.59, 7월 0.08입니다(그림 1, 2019-01~2025-12, 84개월).",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 아이스크림 8월 1.87, 1월 0.46, 호빵 12월 2.59, 7월 0.08입니다(그림 1, 2019-01~2025-12, 84개월)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw03r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w03-ev2",
+   "type": "Claim",
+   "label": {
+    "ko": "NCC 가동률의 가법 계절 효과는 4월 −5.7%p, 5월 −3.3%p입니다(그림 2, 2015-01~2026-08).",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 NCC 가동률의 가법 계절 효과는 4월 −5.7%p, 5월 −3.3%p입니다(그림 2, 2015-01~2026-08)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw03r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w03-ev3",
+   "type": "Claim",
+   "label": {
+    "ko": "2025년 아이스크림을 계절 나이브로 맞히면 MAPE 8.9%입니다(표 1).",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "사실 2025년 아이스크림을 계절 나이브로 맞히면 MAPE 8.9%입니다(표 1)."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw03r",
+     "loc": "Summary"
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/sm-w03-ev4",
+   "type": "Claim",
+   "label": {
+    "ko": "계절조정 전월비는 계절지수를 소수 둘째 자리에서 반올림하느냐에 따라 0.1~0.2%p 달라집니다. 보고서에는 쓴 계절지수의 자릿수를 함께 적는 것이 안전합니다.",
+    "en": ""
+   },
+   "page": "w03-practice",
+   "anchor": "#summary",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "mfg"
+   ],
+   "definition": {
+    "ko": "해석 계절조정 전월비는 계절지수를 소수 둘째 자리에서 반올림하느냐에 따라 0.1~0.2%p 달라집니다. 보고서에는 쓴 계절지수의 자릿수를 함께 적는 것이 안전합니다."
+   },
+   "source": [
+    {
+     "ref": "ahn2026smw03r",
+     "loc": "Summary"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/sm-w03-finding",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026smw03r",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w03",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/sm-w03",
+   "anchor": "#sec-r3-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sm-w03",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#sec-r3-4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-finding",
+   "p": "lab:hasLimitation",
+   "o": "lab:limit/sm-w03",
+   "anchor": "#sec-r3-6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-finding",
+   "p": "lab:raises",
+   "o": "lab:question/sm-w03",
+   "anchor": "#sec-r3-5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-alt",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#sec-r3-5",
+   "confidence": "medium"
+  },
+  {
+   "s": "lab:method/sm-w03",
+   "p": "lab:broader",
+   "o": "lab:topic/smart-manufacturing-w03",
+   "anchor": "#sec-r3-3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-ev1",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-ev2",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-ev3",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#summary",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/sm-w03-ev4",
+   "p": "lab:supports",
+   "o": "lab:claim/sm-w03-finding",
+   "anchor": "#summary",
+   "confidence": "medium"
+  }
+ ]
+}

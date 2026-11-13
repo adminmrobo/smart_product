@@ -1,0 +1,36 @@
+[
+ {
+  "id": "ahn2026smw04",
+  "type": "report",
+  "title": "스마트 제조 04 강의 교안·수업 자료",
+  "author": [
+   {
+    "family": "안",
+    "given": "상선"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "lab": {
+   "work": "lab:work/ahn2026smw04",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자 강의 자료",
+   "checkedSource": "author"
+  }
+ }
+]
