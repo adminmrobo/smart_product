@@ -1,0 +1,121 @@
+{
+ "version": "1.0",
+ "made": "2026-11-24",
+ "via": "rehang-2026-11-24",
+ "domains": [
+  "biz",
+  "ml"
+ ],
+ "note": "분야 뼈대 주제에 다시 걸기(ai-lab-retrofit 15장). links는 자동 후보이며 틀린 줄은 지우면 된다. 빌드 스크립트가 있는 저장소는 빌드 끝에 rehang.apply_overlay()가 이 파일을 적용한다.",
+ "topics": {
+  "lab:topic/control-charts": {
+   "ko": "관리도",
+   "en": "Control charts",
+   "domain": [
+    "biz"
+   ],
+   "level": 2
+  },
+  "lab:topic/demand-forecasting": {
+   "ko": "수요 예측",
+   "en": "Demand forecasting",
+   "domain": [
+    "biz"
+   ],
+   "level": 2
+  },
+  "lab:topic/scheduling": {
+   "ko": "일정 계획",
+   "en": "Scheduling",
+   "domain": [
+    "biz"
+   ],
+   "level": 2
+  },
+  "lab:topic/smart-manufacturing": {
+   "ko": "스마트 제조",
+   "en": "Smart manufacturing",
+   "domain": [
+    "biz"
+   ],
+   "level": 2
+  },
+  "lab:topic/supervised-learning": {
+   "ko": "지도 학습",
+   "en": "Supervised learning",
+   "domain": [
+    "ai",
+    "ml"
+   ],
+   "level": 1
+  },
+  "lab:topic/trend-seasonality": {
+   "ko": "추세·계절",
+   "en": "Trend and seasonality",
+   "domain": [
+    "stats"
+   ],
+   "level": 3
+  }
+ },
+ "links": {
+  "lab:concept/sm-appA-04": {
+   "topic": "lab:topic/control-charts",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "불량품 판정 데이터"
+  },
+  "lab:concept/sm-appA-05": {
+   "topic": "lab:topic/smart-manufacturing",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "AI4I 2024 미니 (예지보전)"
+  },
+  "lab:concept/sm-appA-06": {
+   "topic": "lab:topic/smart-manufacturing",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "AI4I 2024 미니 v2 (7주 불량 분석판)"
+  },
+  "lab:concept/sm-appA-07": {
+   "topic": "lab:topic/control-charts",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "불량품 판정 데이터 v2 (7주 층별판)"
+  },
+  "lab:concept/sm-appA-08": {
+   "topic": "lab:topic/demand-forecasting",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "면류 일별 검색·판매·프로모션"
+  },
+  "lab:concept/sm-appA-09": {
+   "topic": "lab:topic/scheduling",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "면류 생산계획 시트 묶음 (xlsx)"
+  },
+  "lab:concept/sm-appB-08": {
+   "topic": "lab:topic/trend-seasonality",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "계절지수 12개 계산"
+  },
+  "lab:concept/sm-appB-09": {
+   "topic": "lab:topic/supervised-learning",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "판정 기준 도출 분류 모델 (Colab)"
+  }
+ },
+ "retag": {
+  "from": [
+   "ai",
+   "mfg"
+  ],
+  "to": [
+   "biz",
+   "ai"
+  ]
+ }
+}
